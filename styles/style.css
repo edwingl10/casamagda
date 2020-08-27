@@ -135,3 +135,33 @@ nav{
     background-color: #74aaa8;
     border: 1px solid #74aaa8;
 }
+
+/* ----------------------------------------
+ABOUT US
+---------------------------------------- */
+.about-us{
+    color: #000;
+    padding-top: 5em;
+}
+.about-title{
+    
+}
+.about-title:before, .about-title:after{
+    display: block;
+    height: 6px;
+    background-color: #F5B700;
+    content:"";
+    width: 60px;
+}
+.about-title:before{
+    margin-bottom: 15px;
+}
+.about-title:after{
+    margin-top: 15px;
+}
+.about-text{
+
+}
+.iso-house{
+    
+}
