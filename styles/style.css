@@ -17,151 +17,121 @@ html, body{
 *:focus{
     outline: none;
 }
+
+/* used for menu toggle */
+.hide{
+    display:none;
+}
 /* ----------------------------------------
 Header
 ---------------------------------------- */
-
-/* NAVIGATION BAR */
-
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/landing-page.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-attachment: fixed;
-}
 nav{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
-    align-items: center;
-}
-.menu{
-    list-style-type:none;
-    display: flex;
-    margin-right: 37px;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.nav-links, .brand-name, .call-btn span{
-    text-decoration: none;
-    color: white;
-}
-.menu li{
-    text-align: center;
-    margin: 0;
-    margin-top: 20px;
-}
-.brand-name{
-    display: inline-block;
-    font-size: 1.5em;
-    margin-left: 37px;
-    margin-top: 20px;
-    font-weight: 400;
-}
-.nav-links{
-    margin-left: 40px;
     font-size: 1.125em;
 }
+
+/* hamburger menu lines styling */
+.hamburger{
+    position: absolute;
+    z-index: 1;
+    width: 23px;
+    height: 23px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.ham-lines{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+.ham-lines:before,
+.ham-lines:after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+.ham-lines:after{
+    top: 10px;
+}
+
+/* hamburger menu animation */
+.rotate-ham-menu{
+    transform: rotate(135deg);
+}
+
+.rotate-ham-menu.ham-lines:before,
+.rotate-ham-menu.ham-lines:after{
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* links styling */
+#links{
+    display: none;
+    flex-direction: column;
+    margin: 10% 10%;
+    justify-content: space-around;
+}
+#links a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    z-index:2;
+}
+
+
+/*
+
+.brand-name{
+    display: inline-block;
+    font-size: 1.25em;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.navbar-toggle{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+.ham-menu-icon{
+    height: 23px;
+    width: 23px;
+}
+.menu li{
+    list-style-type: none;
+    text-align: center;
+    margin: 50px auto;
+}
+.nav-links, .brand-name, .menu a{
+    text-decoration: none;
+    color: black;
+}
 .call-btn:link, .call-btn:visited{
-    margin-left: 40px;
-    text-decoration: none; 
-    border-radius: 200px;
-    padding: 10px 10px;
     background-color: #F5B700;
     border: 1px solid #F5B700;
-    transition: background-color 0.2s, border 0.2s, color;
+    border-radius: 200px;
+    padding: 10px 10px;
 }
-.call-btn:hover, .call-btn:active{
+.call-btn:hover, .call-btn:active, .call-btn:focus{
     background-color: #d8a303;
     border: 1px solid #d8a303;
     border: 1px solid #d8a303;
 }
-.call-btn span{
-    font-size: 1.125em;
-    color: #000;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
 .phone-icon{
     vertical-align: middle;
-    height: 1.5em;
-    width: 1.5em;
+    height: 22px;
+    width: 22px;
 }
-.nav-links:link,
-.nav-links:visited{
-    padding: 8px 0;
-    border-bottom: 2px solid transparent;
-    transition: border-bttom 0.2s;
-}
-.nav-links:hover,
-.menu l:active{
-    border-bottom: 2px solid #F5B700;
-}
+*/
 
-
-/* HERO TEXT BOX*/
-.hero-text-box{
-    position: absolute;
-    width: 80%;
-    top: 45%;
-    text-align: center;
-    margin: 0 10%;
-}
-.hero-text-box h1{
-    font-size: 2.5em;
-    font-weight: 300;
-    margin-bottom: 30px;
-}
-.hero-text-box h2{
-    font-size: 1.875em;
-    font-weight: 300;
-    margin-bottom: 60px;
-}
-.btn:link, .btn:visited{
-    background-color: #B7D5D4;
-    border: 1px solid #B7D5D4;
-    border-radius: 200px;
-    color: #000;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.5em;
-    font-weight: 400;
-    padding: 10px 30px;
-    transition: background-color 0.2s, border 0.2s, color;
-}
-.btn:hover, .btn:active{
-    background-color: #74aaa8;
-    border: 1px solid #74aaa8;
-}
-
-/* ----------------------------------------
-ABOUT US
----------------------------------------- */
-.about-us{
-    color: #000;
-    padding-top: 5em;
-}
-.about-title{
-    
-}
-.about-title:before, .about-title:after{
-    display: block;
-    height: 6px;
-    background-color: #F5B700;
-    content:"";
-    width: 60px;
-}
-.about-title:before{
-    margin-bottom: 15px;
-}
-.about-title:after{
-    margin-top: 15px;
-}
-.about-text{
-
-}
-.iso-house{
-    
-}
