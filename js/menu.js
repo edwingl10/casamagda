@@ -5,8 +5,6 @@ const header = document.querySelector(".header");
 const hamIcon = document.querySelector(".js-hamburger");
 let closed = true;
 
-const menu = document.querySelector(".menu");
-
 
 //sticky navigation
 var aboutSection = new Waypoint({
@@ -34,7 +32,10 @@ hamMenu.addEventListener("click", ()=>{
     hamIcon.classList.add("black");
     //shows links
     nav.classList.toggle("active");
-
+    //adds animation class to links
+    nav.querySelectorAll("ul li").forEach(el =>{
+        el.classList.toggle("animate__fadeInDown");
+    });
 
     hamMenu.classList.toggle("rotate-ham-menu");
     //makes header fixed so can see x throughout menu
