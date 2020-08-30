@@ -52,7 +52,7 @@ Reusable
 Header
 ---------------------------------------- */
 header{
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/landing-page.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/landing-page.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -129,7 +129,7 @@ nav{
     position: absolute;
     width: 100%;
     height: 100vh;
-    background: rgba(243, 247, 250, 1);
+    background: #EFF4F8;
     top: 0;
     left: 0;
     opacity: 0;
@@ -149,15 +149,12 @@ nav.active{
 .fixed .brand-name{
     color: #000;
 }
-/* scroll disable */
-.no-scroll{
-    overflow: hidden;
-}
 /* links */
 nav ul{
     margin: 0;
     padding: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 nav ul li{
@@ -165,7 +162,7 @@ nav ul li{
     padding-top: 20%;
 }
 nav ul li a{
-    font-size: 1.5em;
+    font-size: 1.75em;
     color: #000;
     text-decoration: none;
 }
@@ -210,6 +207,7 @@ nav ul li a:active{
 .hero-text-box h2{
     margin-bottom: 3em;
     font-size: 1.25em;
+    font-weight: 300;
 }
 /* call to action button*/
 .btn:link, .btn:visited{
@@ -221,7 +219,7 @@ nav ul li a:active{
     display: inline-block;
     font-size: 1.375em;
     font-weight: 400;
-    padding: 5px 10px;
+    padding: 10px 20px;
     transition: background-color 0.2s, border 0.2s, color;
 }
 .btn:hover, .btn:active{
