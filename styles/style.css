@@ -151,15 +151,16 @@ nav.active{
 }
 /* links */
 nav ul{
-    margin: 0;
+    margin: 5% 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90%;
 }
 nav ul li{
     list-style: none;
-    padding-top: 20%;
 }
 nav ul li a{
     font-size: 1.75em;
