@@ -65,7 +65,7 @@ header{
     padding: 0 5%;
     background: transparent;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
 }
 .brand-name{
     color: #fff;
@@ -79,13 +79,13 @@ header{
     position: absolute;
     bottom: 15px;
     right: 5%;
-    z-index: 1;
+    z-index: 5;
     width: 60px;
     height: 20px;
     padding: 1em;
     align-items: center;
     justify-content: center;
-    transition: all 0.4s ease;
+    transition: rotate 0.4s ease;
 }
 .hamburger > div{
     position: relative;
@@ -95,7 +95,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.4s ease;
+    transition: rotate 0.4s ease;
 }
 .hamburger > div:before,
 .hamburger > div:after{
@@ -109,6 +109,10 @@ header{
 }
 .hamburger > div:after{
     top: 8px;
+}
+/* hamburger menu color change */
+.hamburger > .black{
+    background-color: #000;
 }
 /* hamburger menu animation */
 .rotate-ham-menu{
@@ -127,15 +131,17 @@ header{
 nav{
     position: absolute;
     width: 100%;
-    height: calc(100vh - 50px);
-    background: #B7D5D4;
-    top: 50px;
-    left: -100%;
+    height: 100vh;
+    background: #EFF4F8;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    position: fixed;
     transition: all 0.5s ease;
 }
 /* navigation animation */
 nav.active{
-    left: 0;
+    opacity:1;
 }
 /* sticky navigation */
 .fixed{
@@ -145,9 +151,6 @@ nav.active{
 }
 .fixed .brand-name{
     color: #000;
-}
-.fixed .hamburger > div{
-    background-color: #000;
 }
 /* scroll disable */
 .no-scroll{
