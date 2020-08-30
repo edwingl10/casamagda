@@ -7,6 +7,7 @@ let closed = true;
 
 const menu = document.querySelector(".menu");
 
+
 //sticky navigation
 var aboutSection = new Waypoint({
     element: document.querySelector('.js--section-about'),

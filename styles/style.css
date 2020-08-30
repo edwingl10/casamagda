@@ -179,6 +179,7 @@ nav ul li a:active{
 }
 /* call button */
 .call-btn:link, .call-btn:visited{
+     font-size: 1.375em;
     background-color: #F5B700;
     border: 1px solid #F5B700;
     border-radius: 200px;
