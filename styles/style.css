@@ -301,3 +301,28 @@ About Us
 /* ----------------------------------------
 Services Section
 ---------------------------------------- */
+.center-text{
+    text-align: center;
+}
+/* services */
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-des{
+    padding-bottom: 16px;
+}
+.service-des:last-child{
+    padding-bottom: 0;
+}
+.service-des img{
+    width: 180px;
+    height: 180px;
+}
+.service-des p{
+    color: #000;
+    width: 180px;
+    font-size: 1.5rem;
+    text-align: center;
+}   
