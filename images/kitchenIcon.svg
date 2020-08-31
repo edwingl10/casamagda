@@ -1,1 +1,185 @@
-<svg height="100" viewBox="0 0 64 64" width="100" xmlns="http://www.w3.org/2000/svg"><g id="kitchen-broom-microwave-refrigerator-clean"><path d="m36 37v-4a1 1 0 0 0 -1-1h-9v-9a1 1 0 0 0 -1-1h-20a1 1 0 0 0 -1 1v9h-1a1 1 0 0 0 -1 1v4a1 1 0 0 0 1 1v18a1 1 0 0 0 -1 1v4a1 1 0 0 0 1 1h32a1 1 0 0 0 1-1v-4a1 1 0 0 0 -1-1v-18a1 1 0 0 0 1-1zm-16-13h4v8h-4zm-14 0h12v8h-12zm28 36h-30v-2h30zm-29-4v-18h8v18zm10 0v-18h8v18zm18-8v8h-8v-8zm-8-2v-8h8v8zm9-10h-30v-2h30z"/><path d="m8 27h4v2h-4z" transform="matrix(.707 -.707 .707 .707 -16.87 15.272)"/><path d="m12 27h4v2h-4z" transform="matrix(.707 -.707 .707 .707 -15.698 18.101)"/><path d="m21 29h2v2h-2z"/><path d="m21 25h2v2h-2z"/><path d="m9 46h2v2h-2z"/><path d="m17 46h2v2h-2z"/><path d="m27 41h4v2h-4z"/><path d="m27 51h4v2h-4z"/><path d="m61 10h-22a1 1 0 0 0 -1 1v44a1 1 0 0 0 1 1h2.38l-2.27 4.55a1 1 0 0 0 .89 1.45h20a1 1 0 0 0 .89-1.45l-2.27-4.55h2.38a1 1 0 0 0 1-1v-44a1 1 0 0 0 -1-1zm-19.38 50 3-6h1.76l-3 6zm13.38-10v2h-10v-2zm-6-2v-16a1 1 0 0 1 2 0v16zm0 12h-3.38l3-6h.38zm2 0v-6h.38l3 6zm5.62 0-3-6h1.76l3 6zm3.38-6h-2.38l-.62-1.24v-3.76a1 1 0 0 0 -1-1h-3v-16a3 3 0 0 0 -6 0v16h-3a1 1 0 0 0 -1 1v3.76l-.62 1.24h-2.38v-26h20zm0-28h-20v-14h20z"/><path d="m42 22h4v2h-4z"/><path d="m42 32h2v6h-2z"/><path d="m33 10h-9v-5a1 1 0 0 0 -1-1h-4a1 1 0 0 0 -1 1v5h-2v-3a1 1 0 0 0 -1-1h-8a1 1 0 0 0 -1 1v3h-2v-8h-2v17a1 1 0 0 0 1 1h30a1 1 0 0 0 1-1v-8a1 1 0 0 0 -1-1zm-13-4h2v4h-2zm-12 2h6v2h-6zm6 10h-6v-2h6zm8 0h-2v-2h2zm10 0h-8v-3a1 1 0 0 0 -1-1h-4a1 1 0 0 0 -1 1v3h-2v-3a1 1 0 0 0 -1-1h-8a1 1 0 0 0 -1 1v3h-2v-6h28z"/><path d="m30 2h2v2h-2z"/><path d="m28 4h2v2h-2z"/><path d="m30 6h2v2h-2z"/><path d="m32 4h2v2h-2z"/><path d="m58 2h2v2h-2z"/><path d="m56 4h2v2h-2z"/><path d="m58 6h2v2h-2z"/><path d="m60 4h2v2h-2z"/><path d="m44 2h2v2h-2z"/><path d="m42 4h2v2h-2z"/><path d="m44 6h2v2h-2z"/><path d="m46 4h2v2h-2z"/><path d="m32 22h2v2h-2z"/><path d="m30 24h2v2h-2z"/><path d="m32 26h2v2h-2z"/><path d="m34 24h2v2h-2z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   sodipodi:docname="kitchenIcon.svg"
+   id="svg892"
+   version="1.1"
+   width="100"
+   viewBox="0 0 64 64"
+   height="100">
+  <metadata
+     id="metadata898">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs896" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg892"
+     inkscape:window-maximized="0"
+     inkscape:window-y="23"
+     inkscape:window-x="0"
+     inkscape:cy="52.598506"
+     inkscape:cx="57.863077"
+     inkscape:zoom="2.845"
+     showborder="true"
+     showgrid="false"
+     id="namedview894"
+     inkscape:window-height="755"
+     inkscape:window-width="1273"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     transform="matrix(0.6,0,0,0.6,13.947276,10.707909)"
+     id="g933">
+    <circle
+       style="opacity:1;fill:#f3f7fa;fill-opacity:1;stroke-width:1.25501"
+       id="path900"
+       cx="30.003515"
+       cy="35.402462"
+       r="48" />
+    <g
+       id="kitchen-broom-microwave-refrigerator-clean"
+       style="fill:#1a9094;fill-opacity:1"
+       transform="translate(-1.9964848,3.402462)">
+      <path
+         d="M 36,37 V 33 A 1,1 0 0 0 35,32 H 26 V 23 A 1,1 0 0 0 25,22 H 5 a 1,1 0 0 0 -1,1 v 9 H 3 a 1,1 0 0 0 -1,1 v 4 a 1,1 0 0 0 1,1 v 18 a 1,1 0 0 0 -1,1 v 4 a 1,1 0 0 0 1,1 h 32 a 1,1 0 0 0 1,-1 V 57 A 1,1 0 0 0 35,56 V 38 a 1,1 0 0 0 1,-1 z M 20,24 h 4 v 8 H 20 Z M 6,24 h 12 v 8 H 6 Z M 34,60 H 4 V 58 H 34 Z M 5,56 V 38 h 8 v 18 z m 10,0 V 38 h 8 v 18 z m 18,-8 v 8 h -8 v -8 z m -8,-2 v -8 h 8 v 8 z M 34,36 H 4 v -2 h 30 z"
+         id="path833"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 8,27 h 4 v 2 H 8 Z"
+         transform="matrix(0.707,-0.707,0.707,0.707,-16.87,15.272)"
+         id="path835"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 12,27 h 4 v 2 h -4 z"
+         transform="matrix(0.707,-0.707,0.707,0.707,-15.698,18.101)"
+         id="path837"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 21,29 h 2 v 2 h -2 z"
+         id="path839"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 21,25 h 2 v 2 h -2 z"
+         id="path841"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 9,46 h 2 v 2 H 9 Z"
+         id="path843"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 17,46 h 2 v 2 h -2 z"
+         id="path845"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 27,41 h 4 v 2 h -4 z"
+         id="path847"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 27,51 h 4 v 2 h -4 z"
+         id="path849"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="M 61,10 H 39 a 1,1 0 0 0 -1,1 v 44 a 1,1 0 0 0 1,1 h 2.38 l -2.27,4.55 A 1,1 0 0 0 40,62 h 20 a 1,1 0 0 0 0.89,-1.45 L 58.62,56 H 61 a 1,1 0 0 0 1,-1 V 11 a 1,1 0 0 0 -1,-1 z m -19.38,50 3,-6 h 1.76 l -3,6 z M 55,50 v 2 H 45 V 50 Z M 49,48 V 32 a 1,1 0 0 1 2,0 v 16 z m 0,12 h -3.38 l 3,-6 H 49 Z m 2,0 v -6 h 0.38 l 3,6 z m 5.62,0 -3,-6 h 1.76 l 3,6 z M 60,54 H 57.62 L 57,52.76 V 49 A 1,1 0 0 0 56,48 H 53 V 32 a 3,3 0 0 0 -6,0 v 16 h -3 a 1,1 0 0 0 -1,1 v 3.76 L 42.38,54 H 40 V 28 H 60 Z M 60,26 H 40 V 12 h 20 z"
+         id="path851"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 42,22 h 4 v 2 h -4 z"
+         id="path853"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 42,32 h 2 v 6 h -2 z"
+         id="path855"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="M 33,10 H 24 V 5 A 1,1 0 0 0 23,4 h -4 a 1,1 0 0 0 -1,1 v 5 H 16 V 7 A 1,1 0 0 0 15,6 H 7 A 1,1 0 0 0 6,7 v 3 H 4 V 2 H 2 v 17 a 1,1 0 0 0 1,1 h 30 a 1,1 0 0 0 1,-1 V 11 A 1,1 0 0 0 33,10 Z M 20,6 h 2 v 4 H 20 Z M 8,8 h 6 v 2 H 8 Z m 6,10 H 8 v -2 h 6 z m 8,0 h -2 v -2 h 2 z m 10,0 h -8 v -3 a 1,1 0 0 0 -1,-1 h -4 a 1,1 0 0 0 -1,1 v 3 H 16 V 15 A 1,1 0 0 0 15,14 H 7 a 1,1 0 0 0 -1,1 v 3 H 4 v -6 h 28 z"
+         id="path857"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 30,2 h 2 v 2 h -2 z"
+         id="path859"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 28,4 h 2 v 2 h -2 z"
+         id="path861"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 30,6 h 2 v 2 h -2 z"
+         id="path863"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 32,4 h 2 v 2 h -2 z"
+         id="path865"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 58,2 h 2 v 2 h -2 z"
+         id="path867"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 56,4 h 2 v 2 h -2 z"
+         id="path869"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 58,6 h 2 v 2 h -2 z"
+         id="path871"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 60,4 h 2 v 2 h -2 z"
+         id="path873"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 44,2 h 2 v 2 h -2 z"
+         id="path875"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 42,4 h 2 v 2 h -2 z"
+         id="path877"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 44,6 h 2 v 2 h -2 z"
+         id="path879"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 46,4 h 2 v 2 h -2 z"
+         id="path881"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 32,22 h 2 v 2 h -2 z"
+         id="path883"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 30,24 h 2 v 2 h -2 z"
+         id="path885"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 32,26 h 2 v 2 h -2 z"
+         id="path887"
+         style="fill:#1a9094;fill-opacity:1" />
+      <path
+         d="m 34,24 h 2 v 2 h -2 z"
+         id="path889"
+         style="fill:#1a9094;fill-opacity:1" />
+    </g>
+  </g>
+</svg>
