@@ -334,6 +334,11 @@ Services Section
 /* ----------------------------------------
 Why Us Section
 ---------------------------------------- */
+/* why us background image*/
+.bg2{
+    background: url(../images/why-us-bg.svg) no-repeat;
+    background-size: cover;
+}
 .reasons{
     display: flex;
     flex-direction: column;
@@ -355,7 +360,7 @@ Why Us Section
     color: #000;
     margin-bottom: 20px;
 }
-/* why us icon escriptions */
+/* why us icon descriptions */
 .reasons-des p{
     color: #000;
     width: 100%;
