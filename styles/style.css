@@ -284,6 +284,11 @@ nav ul li a:active{
 /* ----------------------------------------
 About Us
 ---------------------------------------- */
+/* about us background image */
+.bg1{
+    background: url(../images/about-bg.svg) no-repeat;
+    background-size: cover;
+}
 .about-content{
     display: flex;
     flex-direction: column;
