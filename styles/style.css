@@ -397,6 +397,7 @@ Cities Section
     margin: 0 auto;
     display: grid;
     grid-template-columns: 50% 50%;
+    row-gap: 20px;
     padding-bottom: 1.875rem;
 }
 .listings span img{
@@ -408,4 +409,65 @@ Cities Section
     color: #000;
     display: inline;
     font-size: 1.5rem;
+}
+/* ----------------------------------------
+Contact Section
+---------------------------------------- */
+form{
+    text-align: center;
+}
+/* input */
+form input{
+    width:70%;
+    height: 50px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #C4C4C4;
+}
+form input::placeholder{
+    color: #C4C4C4;
+    text-align: center;
+}
+/* autofill style */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus{
+  -webkit-text-fill-color: #000;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  box-shadow: 0 0 0 30px white inset !important;
+}
+/* text area */
+form textarea{
+    resize: none;
+    width: 70%;
+    height: 200px;
+    border: 1px solid #C4C4C4;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    line-height: 1.25rem;
+    overflow: auto;
+}
+form textarea::placeholder{
+    color: #C4C4C4;
+    text-align: center;
+    padding-top: 60px;
+}
+/* input and textarea */
+form input, form textarea{
+    font-size: 1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/* submit button */
+.submit-btn{
+    background-color: #F5B700;
+}
+.submit-btn:hover, .submit-btn:active, .submit-btn:focus{
+    background-color: #d8a303;
+    border: 1px solid #d8a303;
+    border: 1px solid #d8a303;
 }
