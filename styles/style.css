@@ -481,3 +481,28 @@ Footer
 footer{
     background-color: #333;
 }
+/* footer links */
+.footer-links{
+    margin-bottom: 30px;
+    margin-top: 15px;
+    width: 100%;
+}
+.footer-links li{
+    list-style: none;
+    color: #919191;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-links li a {
+    cursor: pointer;
+}
+/* footer links hover effect */
+.footer-links li a:hover,
+.footer-links li a:active{
+    color: #CC9900;
+}
+/* copy right */
+footer p{
+    color: #919191;
+    text-align: center;
+}
