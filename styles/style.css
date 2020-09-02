@@ -413,6 +413,10 @@ Cities
 /* ----------------------------------------
 Contact
 ---------------------------------------- */
+.bg3{
+    background: url(../images/contact-bg.svg) no-repeat;
+    background-size: cover;
+}
 .contact-section img{
     display: none;
 }   
