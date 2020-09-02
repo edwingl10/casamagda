@@ -303,7 +303,7 @@ About Us
     margin: 1.875em auto;
 }
 /* ----------------------------------------
-Services Section
+Services
 ---------------------------------------- */
 /* services container */
 .services{
@@ -332,7 +332,7 @@ Services Section
     margin: 0 auto;
 }   
 /* ----------------------------------------
-Why Us Section
+Why Us
 ---------------------------------------- */
 /* why us background image*/
 .bg2{
@@ -368,7 +368,7 @@ Why Us Section
     margin: 0 auto;
 }
 /* ----------------------------------------
-Cities Section 
+Cities
 ---------------------------------------- */
 /* map */
 .locations iframe{
@@ -411,8 +411,11 @@ Cities Section
     font-size: 1.5rem;
 }
 /* ----------------------------------------
-Contact Section
+Contact
 ---------------------------------------- */
+.contact-section img{
+    display: none;
+}   
 form{
     text-align: center;
 }
@@ -423,7 +426,7 @@ form input{
     border-radius: 30px;
     margin-bottom: 30px;
     border: 1px solid #C4C4C4;
-}
+} 
 form input::placeholder{
     color: #C4C4C4;
     text-align: center;
@@ -465,9 +468,16 @@ form input, form textarea{
 /* submit button */
 .submit-btn{
     background-color: #F5B700;
+    margin-bottom: 0;
 }
 .submit-btn:hover, .submit-btn:active, .submit-btn:focus{
     background-color: #d8a303;
     border: 1px solid #d8a303;
     border: 1px solid #d8a303;
+}
+/* ----------------------------------------
+Footer
+---------------------------------------- */
+footer{
+    background-color: #333;
 }
