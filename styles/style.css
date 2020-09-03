@@ -538,8 +538,9 @@ Media Queries
     }
 }
 
-/* page content */
+/* 600px width*/
 @media only screen and (min-width: 600px){
+    /* images */
     .iso-house, .service-des img{
         height: 60%;
         width: 60%;
@@ -548,7 +549,43 @@ Media Queries
         width: 35%;
         height: 35%;
     }
+    /* city listings */
     .listings{
         width: 75%;
+    }
+}
+/* 800px width */
+@media only screen and (min-width: 800px){
+    /* images */
+    .iso-house{
+        width: 40%;
+        height: 40%;
+    }
+    .reasons-des img{
+        width: 30%;
+        height: 30%;
+    }
+    /* services */
+    .services{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .service-des{
+        width: 50%;
+    }
+    .service-des:nth-child(3){
+        margin-bottom: 0;  
+    }
+    /* why us */
+    .reasons-des{
+        width: 70%;
+    }
+    /* citites */
+    .locations iframe{
+        height: 450px;
+    }
+    /* contact */
+    form input, form textarea{
+        width: 70%;
     }
 }
