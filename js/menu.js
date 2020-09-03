@@ -20,7 +20,7 @@ var aboutSection = new Waypoint({
             }
         }
     },
-    offset: '65px'
+    offset: '60px'
 });
 
 //shows nav elements 

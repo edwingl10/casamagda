@@ -38,8 +38,8 @@ Reusable
 .section-title{
     text-align: center;
     color: #000;
-    font-size: 26px;
-    font-weight: 300;
+    font-size: 1.625rem;
+    font-weight: 400;
 }
 /* section descriptions and text */
 .section-text{
@@ -89,18 +89,18 @@ header{
 .brand-name{
     color: #fff;
     line-height: 60px;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-decoration: none;
 }
 /* hamburger menu lines */
 .hamburger{
     display: block;
     position: absolute;
-    bottom: 15px;
+    bottom: 10px;
     right: 5%;
     z-index: 1;
-    width: 60px;
-    height: 20px;
+    width: 3.75rem;
+    height: 2.5rem;
     padding: 1em;
     align-items: center;
     justify-content: center;
@@ -138,13 +138,13 @@ header{
 }
 /* hamburger menu animation */
 .rotate-ham-menu{
-    transform: rotate(135deg);
+    transform: rotate(-135deg);
 }
 
 .rotate-ham-menu.hamburger > div:before,
 .rotate-ham-menu.hamburger > div:after{
     top: 0;
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
 }
 /* navigation */
 nav{
@@ -517,4 +517,53 @@ footer{
 footer p{
     color: #919191;
     text-align: center;
+}
+/* ----------------------------------------
+Media Queries
+---------------------------------------- */
+@media only screen and (min-width: 600px){
+    html{
+        font-size: 20px;
+    }
+    .section-title{
+        font-size: 1.5rem;
+    }
+    .brand-name{
+        font-size: 1.8rem;
+    }
+    .hamburger{
+        bottom: 0;
+    }
+    .hero-text-box h1{
+        font-size: 2rem;
+    }
+    .hero-text-box h2{
+        font-size: 1.4rem;
+    }
+    .service-des img, .iso-house{
+        width: 60%;
+        height: 60%;
+    }
+    .reasons-des img{
+        width: 40%;
+        height: 40%;
+    }
+    .reasons-des h2{
+        font-size: 1.5rem;
+    }
+    .locations iframe{
+        height: 450px;
+    }
+    .city-title{
+        font-size: 1.5rem;
+    }
+    .listings{
+        width: 75%;
+    }
+    .listings span p{
+        font-size: 1.25rem;
+    }
+    footer p, .footer-links li a{
+        font-size: 1rem;
+    }
 }
