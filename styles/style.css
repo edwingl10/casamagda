@@ -38,6 +38,8 @@ Reusable
 .section-title{
     text-align: center;
     color: #000;
+    font-size: 26px;
+    font-weight: 300;
 }
 /* section descriptions and text */
 .section-text{
@@ -71,6 +73,7 @@ header{
     background-size: cover;
     background-position: center;
     height: 100vh;
+    min-height: 400px;
     background-attachment: fixed;
 }
 .header{
@@ -141,7 +144,6 @@ header{
 }
 /* navigation */
 nav{
-    display: none;
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -150,14 +152,10 @@ nav{
     left: 0;
     opacity: 0;
     position: fixed;
-    transition: all 0.3s ease;
 }
 /* navigation animation */
 nav.active, nav ul li.active{
     opacity:1;
-}
-.active{
-    display: block;
 }
 /* sticky navigation */
 .fixed{
@@ -170,20 +168,21 @@ nav.active, nav ul li.active{
 }
 /* links */
 nav ul{
-    margin: 5% 0;
+    margin: 10% 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    height: 90%;
+    height: 100%;
 }
 nav ul li{
     list-style: none;
     opacity: 0;
+    padding-bottom: 80px;
 }
 nav ul li a{
-    font-size: 1.75rem;
+    font-size: 1.5625rem;
     color: #000;
     text-decoration: none;
 }
@@ -298,22 +297,22 @@ About Us
     flex-direction: column;
 }
 .iso-house{
-    height: 50%;
-    width: 50%;
-    margin: 1.875em auto;
+    height: 80%;
+    width: 80%;
+    margin: 1.875em auto 0;
 }
 /* ----------------------------------------
 Services
 ---------------------------------------- */
-/* services container */
 .services{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+/* services container */
 .service-des{
-    width: 50%;
-    margin-bottom: 50px;
+    width: 80%;
+    margin-bottom: 30px;
     text-align: center;
 }
 .service-des:last-child{
@@ -344,10 +343,11 @@ Why Us
     flex-direction: column;
     align-items: center;
 }
+/* reasons container */
 .reasons-des{
-    width: 50%;
+    width: 80%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 /* why us icons */
 .reasons-des img{
@@ -373,7 +373,7 @@ Cities
 /* map */
 .locations iframe{
     width: 100%;
-    height: 450px;
+    height: 350px;
 }
 .locations-content{
     background-color: #FAFCFD;
@@ -386,19 +386,19 @@ Cities
 .city-des{
     width: 90%;
     margin: 1.25rem auto;
+    font-size: 1.125rem;
 }
 .city-title, .city-des{
     color: #000;
     text-align: center;
 }
-/* citites listings */
+/* city listings */
 .listings{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 50% 50%;
     row-gap: 20px;
-    padding-bottom: 1.875rem;
 }
 .listings span img{
     height: 30px;
@@ -408,7 +408,7 @@ Cities
 .listings span p{
     color: #000;
     display: inline;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
 }
 /* ----------------------------------------
 Contact
@@ -425,11 +425,12 @@ form{
 }
 /* input */
 form input{
-    width:70%;
+    width:90%;
     height: 50px;
     border-radius: 30px;
     margin-bottom: 30px;
     border: 1px solid #C4C4C4;
+    font-size: 1rem;
 } 
 form input::placeholder{
     color: #C4C4C4;
@@ -449,12 +450,13 @@ textarea:-webkit-autofill:focus{
 /* text area */
 form textarea{
     resize: none;
-    width: 70%;
+    width: 90%;
     height: 200px;
     border: 1px solid #C4C4C4;
     border-radius: 30px;
     margin-bottom: 30px;
     padding-top: 20px;
+    font-size: 1.125rem;
     line-height: 1.25rem;
     overflow: auto;
 }
@@ -465,7 +467,6 @@ form textarea::placeholder{
 }
 /* input and textarea */
 form input, form textarea{
-    font-size: 1rem;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -488,13 +489,12 @@ footer{
 /* footer links */
 .footer-links{
     margin-bottom: 30px;
-    margin-top: 15px;
     width: 100%;
 }
 .footer-links li{
     list-style: none;
     color: #919191;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: center;
 }
 .footer-links li a {
