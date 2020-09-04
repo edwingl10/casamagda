@@ -26,7 +26,7 @@ var aboutSection = new Waypoint({
 //shows nav elements 
 hamMenu.addEventListener("click", ()=>{
     closed = !closed;
-    //makes ham icon black
+    //makes ham icon white
     hamIcon.classList.add("white");
     //shows links
     nav.classList.toggle("active");
@@ -60,10 +60,19 @@ const stickyNav = ()=>{
     header.classList.add("fixed");
     hamIcon.classList.remove("white");
     hamIcon.classList.add("black");
+
+    nav.querySelectorAll("ul li a").forEach(el =>{
+        el.style.color = "#000";
+    });
 };
+
 //makes navbar normal
 const noStickyNav = ()=>{
     header.classList.remove("fixed");
     hamIcon.classList.remove("black");
     hamIcon.classList.add("white");
+
+    nav.querySelectorAll("ul li a").forEach(el =>{
+        el.style.color = "#fff";
+    });
 };

@@ -2,7 +2,7 @@
 ----------------------------------------
 Table of Contents
 ----------------------------------------
-    1.
+1.
 
 */
 
@@ -104,7 +104,6 @@ header{
     height: 30px;
     cursor: pointer;
     z-index: 1;
-    /*border: 3px solid #fff;*/
     transition: all 0.4s ease;
 }
 .hamburger > div{
@@ -163,7 +162,8 @@ nav.active, nav ul li.active{
     opacity:1;
 }
 .active{
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 /* sticky navigation */
 .fixed{
@@ -587,5 +587,41 @@ Media Queries
     /* contact */
     form input, form textarea{
         width: 70%;
+    }
+}
+/* 1024px width */
+@media only screen and (min-width: 1024px){
+    /* navigation */
+    .hamburger{
+        display: none;
+    }
+    nav{
+        position: absolute;
+        background: transparent;
+        opacity: 1;
+        display: inline-block;
+        height: auto;
+        width: auto;
+        top:0;
+        right: 5%;
+    } 
+    nav ul{
+        margin: 0;
+        width: auto;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 22px;
+    }
+    nav ul li{
+        opacity: 1;
+        padding-bottom: 0;
+        margin-left: 37px;
+    }
+    nav ul li a{
+        font-size: 1.25rem;
+    }
+    .call-btn:link, .call-btn:visited{
+        font-size: 1.25rem;
+        padding: 8px 8px;
     }
 }
