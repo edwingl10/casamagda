@@ -1,78 +1,59 @@
-const hamMenu = document.querySelector(".hamburger");
-const nav = document.querySelector("nav");
 const header = document.querySelector(".header");
-
+const nav = document.querySelector("nav");
+const hamMenu = document.querySelector(".hamburger");
 const hamIcon = document.querySelector(".js-hamburger");
+
 let closed = true;
 
 
-//sticky navigation
 var aboutSection = new Waypoint({
     element: document.querySelector('.js--section-about'),
     handler: function(direction) {
         //if the menu window is closed
         if(closed){
             if(direction == "down"){
-                stickyNav();
+                header.classList.add("fixed");
             }
             else{
-                noStickyNav();
+                header.classList.remove("fixed");
             }
         }
     },
     offset: '60px'
 });
 
-//shows nav elements 
 hamMenu.addEventListener("click", ()=>{
+    clicked();
+});
+
+const clicked = ()=>{
     closed = !closed;
-    //makes ham icon white
-    hamIcon.classList.add("white");
-    //shows links
+    hamIcon.classList.toggle("white");
+    nav.classList.toggle("white");
     nav.classList.toggle("active");
-    //adds animation class to links
     nav.querySelectorAll("ul li").forEach(el =>{
         el.classList.toggle("animate__fadeInDown");
     });
 
     hamMenu.classList.toggle("rotate-ham-menu");
-    //makes header fixed so can see x throughout menu
-    header.classList.add("fixed");
-    
-    //if the ilnks window were closed
+    hamMenu.classList.toggle("stuck");
+
     if(closed)
-        determineHamColor(window.pageYOffset, aboutSection.triggerPoint);
+        determineStickyNav(window.pageYOffset, aboutSection.triggerPoint);
+}
 
-});
-
-//determines if nav should be stciky
-const determineHamColor = (win, wp) => {
-    //if window is on landing page
+//determines if navbar should be sticky
+const determineStickyNav = (win, wp) => {
     if(win < wp){
-        noStickyNav();
+        header.classList.remove("fixed");
     }else{
-        stickyNav();
+        header.classList.add("fixed");
     }
 }
 
-//makes navbar sticky
-const stickyNav = ()=>{
-    header.classList.add("fixed");
-    hamIcon.classList.remove("white");
-    hamIcon.classList.add("black");
-
-    nav.querySelectorAll("ul li a").forEach(el =>{
-        el.style.color = "#000";
-    });
-};
-
-//makes navbar normal
-const noStickyNav = ()=>{
-    header.classList.remove("fixed");
-    hamIcon.classList.remove("black");
-    hamIcon.classList.add("white");
-
-    nav.querySelectorAll("ul li a").forEach(el =>{
-        el.style.color = "#fff";
-    });
-};
+//closes mobile navbar if open
+window.addEventListener("resize", ()=>{
+    if(window.innerWidth >= 1024 && !closed){
+        clicked();
+    }
+})
