@@ -386,12 +386,12 @@ Why Us
 Cities
 ---------------------------------------- */
 /* map */
-.locations{
-    background-color: #FAFCFD;
-}
 .locations iframe{
     width: 100%;
     height: 350px;
+}
+.locations-container{
+    background-color: #FAFCFD;
 }
 .locations-content{
     margin-top: 0.9375rem;
@@ -699,7 +699,7 @@ Media Queries
     /* citites */
     .locations{
         display: flex;
-        align-items: center;
+        align-items: stretch;
     }
     .locations iframe{
         width: 60%;
@@ -708,6 +708,9 @@ Media Queries
     }
     .city-des{
         width: 90%;
+    }
+    .locations-container{
+        margin-right: 20px;
     }
     .locations-content{
         margin: auto 0;
