@@ -32,7 +32,7 @@ Reusable
 ---------------------------------------- */
 /* section paddings */
 .sec-gap{
-    padding: 1.875em 5%;
+    padding: 35px 5%;
 }
 /* section specifics */
 .section-title{
@@ -274,6 +274,7 @@ nav.white ul li a{
 }
 .hero-text-box h1{
     margin-bottom: 1.25em;
+    font-weight: 300;
 }
 .hero-text-box h2{
     margin-bottom: 3em;
@@ -385,12 +386,14 @@ Why Us
 Cities
 ---------------------------------------- */
 /* map */
+.locations{
+    background-color: #FAFCFD;
+}
 .locations iframe{
     width: 100%;
     height: 350px;
 }
 .locations-content{
-    background-color: #FAFCFD;
     margin-top: 0.9375rem;
 }
 /* title and description */
@@ -597,6 +600,17 @@ Media Queries
 }
 /* 1024px width */
 @media only screen and (min-width: 1024px){
+    /* reusable */
+    .section-title{
+        font-size: 1.75rem;
+    }
+    .section-text{
+        font-size: 1.25rem;
+    }
+    .center-text{
+        width: 80%;
+        margin: 0 auto;
+    }
     /* navigation */
     .hamburger{
         display: none;
@@ -629,5 +643,104 @@ Media Queries
     .call-btn:link, .call-btn:visited{
         font-size: 1.25rem;
         padding: 8px 8px;
+    }
+    /* hero text */
+    .hero-text-box h1{
+        font-size: 2.3125rem;
+    }
+    .hero-text-box h2{
+        font-size: 1.5625rem;
+    }
+    /* about us*/
+    .about-content{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;  
+    }
+    .about-content .section-text p{
+        margin: 0;
+        margin-right: 40px;
+    }
+    .iso-house{
+        width: 35%;
+        height: 35%;
+        margin: auto 0;
+    }
+    /* services */
+    .services{
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
+    .service-des{
+        width: 20%;
+        margin: 0;
+    }
+    .service-des img{
+        width: 100%;
+        height: 100%;
+    }
+    .service-des p{
+        width: 95%;
+    }
+    /* why us */
+    .reasons{
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .reasons-des{
+        width: 30%;
+    }
+    .reasons-des img{
+        width: 45%;
+        height: 45%;
+    }
+    /* citites */
+    .locations{
+        display: flex;
+        align-items: center;
+    }
+    .locations iframe{
+        width: 60%;
+        height: 400px;
+        order: 2;
+    }
+    .city-des{
+        width: 90%;
+    }
+    .locations-content{
+        margin: auto 0;
+        order: 1;
+    }
+    /* contact */
+    .contact-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 85%;
+        margin: 0 auto;
+    }
+    form{
+        width: 50%;
+    }
+    form input, form textarea{
+        width: 100%;
+    }
+    .contact-section img{
+        display: block;
+        height: 40%;
+        width: 40%;
+    }    
+    /* footer */
+    .footer-links{
+        display: flex;
+    }
+    .footer-links li{
+        margin-right: 30px;
+    }
+    .footer-links li:last-child{
+        margin-right: 0;
+        margin-left: auto;
     }
 }
