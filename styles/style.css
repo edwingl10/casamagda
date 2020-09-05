@@ -654,16 +654,16 @@ Media Queries
     /* about us*/
     .about-content{
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;  
     }
-    .about-content .section-text p{
+    .about-content .section-text{
         margin: 0;
-        margin-right: 40px;
+        width: 50%;
     }
     .iso-house{
-        width: 35%;
-        height: 35%;
+        width: 40%;
+        height: 40%;
         margin: auto 0;
     }
     /* services */
