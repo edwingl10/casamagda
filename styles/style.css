@@ -703,6 +703,7 @@ Media Queries
     .locations{
         display: flex;
         align-items: stretch;
+        margin-top: 30px;
     }
     .locations iframe{
         width: 60%;
