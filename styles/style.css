@@ -32,7 +32,7 @@ Reusable
 ---------------------------------------- */
 /* section paddings */
 .sec-gap{
-    padding: 35px 5%;
+    padding: 2.1875rem 5%;
 }
 /* section specifics */
 .section-title{
@@ -527,6 +527,9 @@ footer p{
     color: #919191;
     text-align: center;
 }
+.footer-links li a, footer p{
+    font-size: 1rem;
+}
 /* ----------------------------------------
 Media Queries
 ---------------------------------------- */
@@ -745,5 +748,24 @@ Media Queries
     .footer-links li:last-child{
         margin-right: 0;
         margin-left: auto;
+    }
+}
+/* 1536px width */
+@media only screen and (min-width: 1536px){
+    html{
+        font-size: 20px;
+    }
+    /* cities */
+    .locations{
+        justify-content: space-around;
+    }
+    .locations iframe{
+        width: 50%;
+        height: 500px;
+    }
+    .locations-container{
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
     }
 }
