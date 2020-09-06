@@ -54,11 +54,11 @@ Reusable
 /* border */
 .border{
     display: block;
-    height: 2px;
+    height: 0.125rem;
     background-color: #F5B700;
     content:"";
-    width: 60px;
-    margin: 20px auto;
+    width: 3.75rem;
+    margin: 1.25rem auto;
 }
 /* descriptions */
 .center-text{
@@ -362,18 +362,19 @@ Why Us
 .reasons-des{
     width: 80%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 /* why us icons */
 .reasons-des img{
     width: 50%;
     height: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 /* why us icon titles */
 .reasons-des h2{
     color: #000;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
 }
 /* why us icon descriptions */
 .reasons-des p{
@@ -399,6 +400,7 @@ Cities
 /* title and description */
 .city-title{
     padding-top: 1.875rem;
+    font-size: 1.5rem;
 }
 .city-des{
     width: 90%;
@@ -703,7 +705,7 @@ Media Queries
     .locations{
         display: flex;
         align-items: stretch;
-        margin-top: 30px;
+        margin-top: 1.875rem;
     }
     .locations iframe{
         width: 60%;
@@ -758,7 +760,11 @@ Media Queries
     }
     /* header */
     .header.fixed{
-        height: 69px;
+        height: 3.45rem;
+    }
+    /* hero text button */
+    .btn:link, .btn:visited{
+        padding: 14px 24px;
     }
     /* cities */
     .locations{
@@ -772,5 +778,37 @@ Media Queries
         margin-right: 0;
         display: flex;
         justify-content: center;
+    }
+}
+/* 1680px width */
+@media only screen and (min-width: 1680px){
+    .center-text{
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 1900px){
+    /* general */
+    html{
+        font-size: 25px;
+    }
+    .sec-gap{
+        padding: 2.1875rem 7%;
+    }
+    /* header */
+    .header{
+        padding: 0 7%;
+    }
+    .hero-text-box{
+        padding: 0 7%;
+    }
+    .btn:link, .btn:visited{
+        padding: 19px 29px;
+    }
+    /* contact section */
+    .contact-section{
+        justify-content: space-around;
+    }
+    form{
+        width: 40%;
     }
 }
