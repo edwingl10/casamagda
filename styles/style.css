@@ -755,6 +755,10 @@ Media Queries
     html{
         font-size: 20px;
     }
+    /* header */
+    .header.fixed{
+        height: 69px;
+    }
     /* cities */
     .locations{
         justify-content: space-around;
