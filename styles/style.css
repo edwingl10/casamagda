@@ -84,7 +84,7 @@ header{
     background: transparent;
     width: 100%;
     z-index: 3;
-    padding-top: 5px;
+    padding-top: 0.3125rem;
 }
 /* fixed navbar */
 .header.fixed{
@@ -715,9 +715,6 @@ Media Queries
     .city-des{
         width: 90%;
     }
-    .locations-container{
-        margin-right: 20px;
-    }
     .locations-content{
         margin: auto 0;
         order: 1;
@@ -797,6 +794,7 @@ Media Queries
     /* header */
     .header{
         padding: 0 7%;
+        padding-top: 0.3125rem;
     }
     .hero-text-box{
         padding: 0 7%;
@@ -810,5 +808,23 @@ Media Queries
     }
     form{
         width: 40%;
+    }
+}
+/* 2500px wide */
+@media only screen and (min-width: 2500px){
+    /* general */
+    html{
+        font-size: 30px;
+    }
+    /* citites */
+    .locations iframe{
+        height: 650px;
+    }
+    /* contact section */
+    form input{
+        height: 70px;
+    }
+    form textarea{
+        height: 220px;
     }
 }
