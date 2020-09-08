@@ -14,10 +14,7 @@ html, body{
 *:focus{
     outline: none;
 }
-.sec{
-    width: 90%;
-    margin: 0 auto;
-}
+
 /* ----------------------------------------
 Header
 ---------------------------------------- */
@@ -38,36 +35,44 @@ nav a{
     text-decoration: none;
     color: #000;
 }
-/* 404 image */
-.title{
-    margin-top: 2.5rem;
+/* content container */
+.content-container{
+    width: 90%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+.content-container img{
+    width: 100%;
+    height: auto;
     margin-bottom: 1.875rem;
 }
-.title img{
-    height: 100%;
-    width: 100%;
-}
-/* title text */
-.title-text{
+/* title */
+.content-container h1{
     font-size: 1.875rem;
     text-align: center;
     margin-bottom: 1.875rem;
 }
-.description{
+/* description */
+.content-container p{
     font-size: 1.125rem;
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 3.125rem;
-    width: 80%;
+    margin-bottom: 3.75rem;
 }
+/* button */
 .btn-container{
     text-align: center;
 }
-.btn:link, .btn:visited{
+.content-container a:link, .content-container a:visited{
     font-size: 1.5625rem;
     background-color: #F5B700;
     border: 1px solid #F5B700;
     border-radius: 200px;
     padding: 0.5rem 3.75rem;
     text-decoration: none;
+}
+.content-container a:hover, .content-container a:focus{
+    background-color: #d8a303;
+    border: 1px solid #d8a303;
+    border: 1px solid #d8a303;
 }
