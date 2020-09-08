@@ -39,10 +39,11 @@ nav a{
 .content-container{
     width: 90%;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 5%;
 }
 .content-container img{
+    display: block;
     width: 100%;
     height: auto;
     margin-bottom: 1.875rem;
@@ -75,4 +76,17 @@ nav a{
     background-color: #d8a303;
     border: 1px solid #d8a303;
     border: 1px solid #d8a303;
+}
+/* ----------------------------------------
+Media Queries
+---------------------------------------- */
+@media only screen and (min-width: 1024px){
+    .content-container img{
+        width: 80%;
+        margin: 0 auto 1.875rem;
+    }
+    .content-container p{
+        width: 60%;
+        margin: 0 auto 3.75rem;
+    }
 }
