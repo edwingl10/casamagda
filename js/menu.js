@@ -5,7 +5,6 @@ const hamIcon = document.querySelector(".js-hamburger");
 
 let closed = true;
 
-
 var aboutSection = new Waypoint({
     element: document.querySelector('.js--section-about'),
     handler: function(direction) {
@@ -57,6 +56,31 @@ window.addEventListener("resize", ()=>{
         clicked();
     }
 })
+
+//on load animations
+var wp1 = new Waypoint({
+    element: document.querySelector('.js--wp-1'),
+    handler: function(direction) {
+        document.querySelector('.js--wp-1').classList.add("animate_fadeInRight");
+    },
+    offset: '50%'
+});
+
+var wp2 = new Waypoint({
+    element: document.querySelector('.js--wp-2'),
+    handler: function(direction) {
+        document.querySelector('.js--wp-2').classList.add("animate_fadeIn");
+    },
+    offset: '60%'
+});
+
+var wp3 = new Waypoint({
+    element: document.querySelector('.js--wp-3'),
+    handler: function(direction) {
+        document.querySelector('.reasons').classList.add("animate_fadeIn");
+    },
+    offset: '50%'
+});
 
 $(document).ready(function(){
     //call to action btn scroll
