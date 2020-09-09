@@ -82,7 +82,7 @@ Media Queries
 ---------------------------------------- */
 @media only screen and (min-width: 1024px){
     .content-container img{
-        width: 80%;
+        width: 70%;
         margin: 0 auto 1.875rem;
     }
     .content-container p{
@@ -99,5 +99,15 @@ Media Queries
     }
     .content-container p{
         width: 40%;
+    }
+}
+@media only screen and (min-width: 1900px){
+    html{
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width: 2500px){
+    html{
+        font-size: 30px;
     }
 }
