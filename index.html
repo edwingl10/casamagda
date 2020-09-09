@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         
         <div class="header">
             <a href="#" class="brand-name">Casa Magda</a>  
@@ -18,11 +18,11 @@
             
             <nav>
                 <ul class="menu">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Locations</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#locations">Locations</a></li>
                     <li>
-                        <a href="#" class="call-btn">
+                        <a href="tel:123-456-7890" class="call-btn">
                             <img src="images/phoneIcon.svg" alt="phone icon" class="phone-icon">
                             <span style="color:#000">(323) 219-2392</span>
                         </a>
@@ -34,12 +34,12 @@
         <div class="hero-text-box">
             <h1>Your reliable cleaning partner</h1>
             <h2>We clean your premise so you can lead a happier, safer lifestyle</h2>
-            <a href="#" class="btn">Learn More</a>
+            <a class="btn js--learn-more" href="#">Learn More</a>
         </div> 
     </header>
 
     
-    <div class="sec-gap js--section-about bg1">
+    <div class="sec-gap js--section-about bg1" id="about-us">
         <h2 class="section-title">Who We Are</h2>
         <div class="border"></div>
 
@@ -61,7 +61,7 @@
         </div>
     </div> 
 
-    <div class="sec-gap">
+    <div class="sec-gap" id="services">
         <h2 class="section-title">Our Services</h2>
         <div class="border"></div>
 
@@ -91,7 +91,7 @@
         </div>
     </div>
 
-    <div class="sec-gap bg2">
+    <div class="sec-gap bg2" id="why-us">
         <h2 class="section-title">Why Work With Us</h2>
         <div class="border"></div>
 
@@ -114,7 +114,7 @@
         </div>
     </div>
 
-    <div class="sec-gap">
+    <div class="sec-gap" id="locations">
         <h2 class="section-title">Where We Are</h2>
         <div class="border"></div>
 
@@ -169,18 +169,20 @@
 
     <footer class="sec-gap">
         <ul class="footer-links">
-            <li><a>About Us</a></li>
-            <li><a>Our Services</a></li>
-            <li><a>Why Us</a></li>
-            <li><a>Locations</a></li>
-            <li><a>(323) 219-2392</a></li>
-            <li><a>Back To Top ^</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="tel:123-456-7890">(323) 219-2392</a></li>
+            <li><a href="#header">Back To Top ^</a></li>
         </ul>
         <p>Copyright &#169;2020 by Casa Magda. All rights reserved.</p>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/noframework.waypoints.min.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>
