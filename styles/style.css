@@ -306,6 +306,7 @@ About Us
 .bg1{
     background: url(../images/about-bg.svg) no-repeat;
     background-size: cover;
+    background-position: bottom;
 }
 .about-content{
     display: flex;
@@ -352,6 +353,7 @@ Why Us
 .bg2{
     background: url(../images/why-us-bg.svg) no-repeat;
     background-size: cover;
+    background-position: bottom;
 }
 .reasons{
     display: flex;
@@ -435,6 +437,7 @@ Contact
 .bg3{
     background: url(../images/contact-bg.svg) no-repeat;
     background-size: cover;
+    background-position: top;
 }
 .contact-section img{
     display: none;
