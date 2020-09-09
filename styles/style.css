@@ -2,8 +2,66 @@
 ----------------------------------------
 Table of Contents
 ----------------------------------------
-1.
-
+1. Basic Setup
+2. Reusable
+    2.1 section paddings
+    2.2 section specifics
+    2.3 section descriptions and text
+    2.4 padding between paragraphs
+    2.5 border
+    2.6 descriptions
+3. Header
+    3.1 fixed navbar
+    3.2 navbar text color change
+    3.3 hamburger menu lines
+    3.4 hamburger menu black
+    3.5 hamburger fixed position
+    3.6 hamburger menu white
+    3.7 hamburger menu animation
+    3.8 navigation
+    3.9 navigation show
+    3.10 links
+    3.11 links white
+    3.12 links animation 
+    3.13 call button
+    3.14 hero text box
+    3.15 call to action button
+4. About Us
+    4.1 about us background image
+5. Services
+    5.1 services container
+    5.2 service icons
+    5.3 service icon descriptions
+6. Why Us
+    6.1 why us background image
+    6.2 reasons container
+    6.3 why us icons
+    6.4 why us icon titles
+    6.5 why us icon descriptions
+7. Citites
+    7.1 map
+    7.2 title and description
+    7.3 city listings
+8. Contact
+    8.1 input
+    8.2 autofill style
+    8.3 text area
+    8.4 input and textarea
+    8.5 submit button
+9. Footer
+    9.1 footer links
+    9.2 footer links hover effect
+    9.3 copy right
+10. Onload Animations
+11. Media Queries
+    11.1 full screen navbar
+    11.2 600px width
+    11.3 800px width
+    11.4 1024px width
+    11.5 1536px width
+    11.6 1680px width
+    11.7 1900px width
+    11.8 2500px width
 */
 
 
@@ -352,7 +410,7 @@ Services
 /* ----------------------------------------
 Why Us
 ---------------------------------------- */
-/* why us background image*/
+/* why us background image */
 .bg2{
     background: url(../images/why-us-bg.svg) no-repeat;
     background-size: cover;
