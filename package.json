@@ -1,0 +1,26 @@
+{
+  "name": "casamagda",
+  "version": "1.0.0",
+  "description": "Casa Magda is a 2 person housekeeping team with the mission to make your home cleaning experience safe and consistently delightful.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwingl10/casamagda.git"
+  },
+  "keywords": [
+    "housekeeping",
+    "cleaning",
+    "service",
+    "window",
+    "cleaning"
+  ],
+  "author": "Edwin G. Lopez-Paz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edwingl10/casamagda/issues"
+  },
+  "homepage": "https://github.com/edwingl10/casamagda#readme"
+}
