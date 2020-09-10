@@ -584,7 +584,7 @@ footer{
     cursor: pointer;
 }
 .footer-links li a:link,
-.footer-links li a :visited{
+.footer-links li a:visited{
     text-decoration: none;
     color: #919191;
 }
