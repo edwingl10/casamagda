@@ -64,7 +64,10 @@ nav a{
 .btn-container{
     text-align: center;
 }
-.content-container a:link, .content-container a:visited{
+.btn{
+    color: #000;
+}
+.btn-container a:link, .btn-container a:visited{
     font-size: 1.5625rem;
     background-color: #F5B700;
     border: 1px solid #F5B700;
@@ -72,7 +75,7 @@ nav a{
     padding: 0.5rem 3.75rem;
     text-decoration: none;
 }
-.content-container a:hover, .content-container a:focus{
+.btn-container a:hover, .btn-container a:focus{
     background-color: #d8a303;
     border: 1px solid #d8a303;
     border: 1px solid #d8a303;
