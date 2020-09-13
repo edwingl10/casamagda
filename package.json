@@ -2,7 +2,7 @@
   "name": "casamagda",
   "version": "1.0.0",
   "description": "Casa Magda is a 2 person housekeeping team with the mission to make your home cleaning experience safe and consistently delightful.",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/edwingl10/casamagda/issues"
   },
-  "homepage": "https://github.com/edwingl10/casamagda#readme"
+  "homepage": "https://github.com/edwingl10/casamagda#readme",
+  "dependencies": {
+    "firebase": "^7.20.0",
+    "firebase-admin": "^9.1.1"
+  }
 }
