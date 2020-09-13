@@ -82,6 +82,7 @@ var wp3 = new Waypoint({
     offset: '50%'
 });
 
+
 $(document).ready(function(){
     //call to action btn scroll
     $('.js--learn-more').click(function(){
