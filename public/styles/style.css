@@ -732,8 +732,8 @@ Media Queries
   }
 }
 
-/* Small (sm: 600px - 899px) */
-@media (min-width: 600px) and (max-width: 899px) {
+/* Small screen sizes and up */
+@media (min-width: 600px) {
   .iso-house {
     height: 320px;
     width: 320px;
@@ -769,6 +769,18 @@ Media Queries
   form textarea {
     width: 70%;
   }
+}
+
+/* Medium screen sizes and up */
+@media (min-width: 900px) {
+  .iso-house {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+/* Large screen sizes and up */
+@media (min-width: 1200px) {
 }
 
 @media DISABLED {
