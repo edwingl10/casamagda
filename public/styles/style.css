@@ -463,6 +463,11 @@ Cities
 .locations-container {
   background-color: #fafcfd;
 }
+.listings-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
 .locations-content {
   margin-top: 0.9375rem;
 }
@@ -481,14 +486,25 @@ Cities
   color: #000;
   text-align: center;
 }
+
 /* city listings */
-.listings {
-  width: 100%;
+.listings-cotnainer {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  row-gap: 1.25rem;
 }
+.listings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.listings span {
+  display: flex;
+  align-items: center;
+  flex: 0 1 calc(50% - 1rem);
+}
+
 .listings span img {
   height: 1.875rem;
   width: 1.875rem;
@@ -680,6 +696,14 @@ Onload Animations
 /* ----------------------------------------
 Media Queries
 ---------------------------------------- */
+@media (max-width: 400px) {
+  .listings-container {
+    width: 50%;
+  }
+  .listings span {
+    flex: 0 1 100%;
+  }
+}
 /* Extra Small (xs: 0px - 599px) */
 @media (max-width: 599px) {
   .iso-house {
@@ -692,6 +716,10 @@ Media Queries
   }
   .service-des {
     width: 100%;
+  }
+  .reasons-des img {
+    width: 90px;
+    height: 90px;
   }
 }
 
