@@ -90,8 +90,10 @@ body {
 Reusable
 ---------------------------------------- */
 /* section paddings */
-.sec-gap {
+.container {
   padding: 2.1875rem 5%;
+  max-width: 1536px;
+  margin: 0 auto;
 }
 /* section specifics */
 .section-title {
