@@ -498,7 +498,7 @@ Cities
 .listings {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+
   gap: 1.5rem;
 }
 .listings span {
@@ -756,9 +756,9 @@ Media Queries
   }
 
   /* city listings */
-  .listings {
+  .listings span {
+    flex: 0 1 calc(33.33% - 1rem);
   }
-
   /* citites */
   .locations iframe {
     height: 450px;
