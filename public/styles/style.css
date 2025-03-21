@@ -499,7 +499,6 @@ Cities
 .listings {
   display: flex;
   flex-wrap: wrap;
-
   gap: 1.5rem;
 }
 .listings span {
@@ -788,6 +787,12 @@ Media Queries
     flex-direction: row;
     align-items: flex-start;
     column-gap: 2.5rem;
+  }
+  .listings {
+    justify-content: center;
+  }
+  .listings span {
+    flex: 0 1 calc(24% - 1rem);
   }
 }
 
