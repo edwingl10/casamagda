@@ -796,10 +796,15 @@ Media Queries
   .listings span {
     flex: 0 1 calc(24% - 1rem);
   }
-}
+  .footer-links {
+    display: flex;
+    column-gap: 2rem;
+  }
 
-/* Large screen sizes and up */
-@media (min-width: 1200px) {
+  .footer-links li:last-child {
+    margin-right: 0;
+    margin-left: auto;
+  }
 }
 
 @media DISABLED {
