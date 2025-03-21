@@ -381,6 +381,8 @@ About Us
 .iso-house {
   margin: 1.875em auto 0;
   opacity: 0;
+  height: 50%;
+  width: 50%;
 }
 /* ----------------------------------------
 Services
@@ -393,7 +395,6 @@ Services
 }
 /* services container */
 .service-des {
-  width: 80%;
   margin-bottom: 1.875rem;
   text-align: center;
 }
@@ -402,8 +403,8 @@ Services
 }
 /* service icons */
 .service-des img {
-  width: 80%;
-  height: 80%;
+  width: 130px;
+  height: 130px;
 }
 /* service icon descriptions */
 .service-des p {
@@ -696,6 +697,7 @@ Onload Animations
 /* ----------------------------------------
 Media Queries
 ---------------------------------------- */
+/* needed for city listings to avoid weird layout */
 @media (max-width: 400px) {
   .listings-container {
     width: 50%;
@@ -706,17 +708,6 @@ Media Queries
 }
 /* Extra Small (xs: 0px - 599px) */
 @media (max-width: 599px) {
-  .iso-house {
-    height: 50%;
-    width: 50%;
-  }
-  .service-des img {
-    width: 130px;
-    height: 130px;
-  }
-  .service-des {
-    width: 100%;
-  }
   .reasons-des img {
     width: 90px;
     height: 90px;
@@ -742,36 +733,34 @@ Media Queries
 
 /* Small (sm: 600px - 899px) */
 @media (min-width: 600px) and (max-width: 899px) {
-  /* images */
-  .service-des img {
-    height: 60%;
-    width: 60%;
+  .iso-house {
+    height: 320px;
+    width: 320px;
   }
+  /* services */
+  .services {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 2.5rem;
+  }
+  .service-des {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  /* why us */
   .reasons-des img {
     width: 35%;
     height: 35%;
   }
 
+  .reasons-des {
+    width: 70%;
+  }
+
   /* city listings */
   .listings {
     width: 75%;
-  }
-
-  /* services */
-  .services {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .service-des {
-    width: 50%;
-  }
-  .service-des:nth-child(3) {
-    margin-bottom: 0;
-  }
-
-  /* why us */
-  .reasons-des {
-    width: 70%;
   }
 
   /* citites */
@@ -783,13 +772,6 @@ Media Queries
   form input,
   form textarea {
     width: 70%;
-  }
-  .service-des img {
-    width: 80px;
-    height: 80px;
-  }
-  .service-des {
-    width: 50%;
   }
 }
 
