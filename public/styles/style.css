@@ -464,11 +464,7 @@ Cities
 .locations-container {
   background-color: #fafcfd;
 }
-.listings-container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-}
+
 .locations-content {
   margin-top: 0.9375rem;
 }
@@ -489,11 +485,16 @@ Cities
 }
 
 /* city listings */
-.listings-cotnainer {
+.listings-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  padding-bottom: 1.25rem;
 }
+
 .listings {
   display: flex;
   flex-wrap: wrap;
@@ -756,7 +757,6 @@ Media Queries
 
   /* city listings */
   .listings {
-    width: 75%;
   }
 
   /* citites */
