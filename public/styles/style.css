@@ -392,6 +392,7 @@ Services
   flex-direction: column;
   align-items: center;
   opacity: 0;
+  justify-content: center;
 }
 /* services container */
 .service-des {
@@ -776,6 +777,17 @@ Media Queries
   .iso-house {
     height: 350px;
     width: 350px;
+  }
+  .services {
+    column-gap: 2.5rem;
+  }
+  .service-des {
+    width: 20%;
+  }
+  .reasons {
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 2.5rem;
   }
 }
 
