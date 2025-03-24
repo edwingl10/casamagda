@@ -130,13 +130,15 @@ Reusable
 Header
 ---------------------------------------- */
 header {
+  background-color: #000;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/landing-page.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   min-height: 400px;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 .header {
   position: absolute;
@@ -332,7 +334,9 @@ nav.white ul li a {
 /* hero text box */
 .hero-text-box {
   position: absolute;
-  top: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
   padding: 0 5%;
