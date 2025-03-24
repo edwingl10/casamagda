@@ -478,16 +478,14 @@ Cities
 .city-title {
   padding-top: 1.875rem;
   font-size: 1.5rem;
+  color: #000;
+  text-align: center;
 }
 .city-des {
   width: 90%;
   margin: 1.25rem auto;
   font-size: 1.125rem;
-}
-.city-title,
-.city-des {
   color: #000;
-  text-align: center;
 }
 
 /* city listings */
