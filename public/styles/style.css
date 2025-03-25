@@ -426,7 +426,7 @@ Why Us
 .bg2 {
   background: url(../images/why-us-bg.svg) no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: 25% 75%;
 }
 .reasons {
   display: flex;
