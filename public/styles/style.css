@@ -85,6 +85,11 @@ body {
 *:focus {
   outline: none;
 }
+/* only activates once the full navbar appears */
+body.no-scroll {
+  overflow: hidden;
+  touch-action: none;
+}
 
 /* ----------------------------------------
 Reusable
@@ -139,14 +144,16 @@ header {
   height: 100vh;
   min-height: 400px;
   background-attachment: scroll;
+  max-width: 1536px;
+  margin: 0 auto;
 }
 .header {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0%;
+  width: 100%;
   padding: 0 5%;
   background: transparent;
-  width: 100%;
   z-index: 3;
   padding-top: 0.3125rem;
 }
@@ -240,6 +247,7 @@ nav {
 nav.active {
   display: block;
   opacity: 1;
+  overflow: hidden;
 }
 /* links */
 nav ul {
@@ -798,7 +806,11 @@ Media Queries
   .hamburger {
     display: none;
   }
-
+  .header {
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1536px;
+  }
   nav {
     display: flex;
     justify-content: flex-end;
@@ -812,16 +824,15 @@ Media Queries
     right: 5%;
   }
   nav ul {
-    margin: 0;
     width: auto;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 1.375rem;
+    margin-top: 1rem;
   }
   nav ul li {
     opacity: 1;
     padding-bottom: 0;
-    margin-left: 2.3125rem;
+    margin-left: 1.5rem;
   }
   nav ul li a {
     font-size: 1.25rem;
