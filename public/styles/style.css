@@ -828,12 +828,6 @@ Media Queries
     align-items: flex-start;
     column-gap: 2.5rem;
   }
-  .listings {
-    justify-content: center;
-  }
-  .listings span {
-    flex: 0 1 calc(24% - 1rem);
-  }
   .footer-links {
     display: flex;
     column-gap: 2rem;
@@ -842,5 +836,33 @@ Media Queries
   .footer-links li:last-child {
     margin-right: 0;
     margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .locations {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* or center, depending on your design */
+    gap: 1rem; /* optional spacing between columns */
+  }
+
+  .locations iframe {
+    order: 2; /* place the map on the right */
+    flex: 1 1 60%; /* adjust as needed for desired width */
+  }
+
+  .locations-container {
+    order: 1; /* place the cities content on the left */
+    flex: 1 1 40%; /* adjust as needed */
+  }
+  .listings {
+    justify-content: flex-start;
+  }
+  .listings span {
+    flex: 0 1 calc((100% - 1.5rem) / 2);
+  }
+  .city-des {
+    text-align: left;
   }
 }
