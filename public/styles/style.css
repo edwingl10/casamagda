@@ -828,6 +828,24 @@ Media Queries
     align-items: flex-start;
     column-gap: 2.5rem;
   }
+  .contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+  form {
+    width: 55%;
+  }
+  form input,
+  form textarea {
+    width: 100%;
+  }
+  .contact-section img {
+    display: block;
+    height: 250px;
+    width: 250px;
+  }
   .footer-links {
     display: flex;
     column-gap: 2rem;
