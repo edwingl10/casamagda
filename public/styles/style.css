@@ -724,7 +724,7 @@ Onload Animations
 Media Queries
 ---------------------------------------- */
 /* needed for city listings to avoid weird layout */
-@media (max-width: 400px) {
+@media (max-width: 360px) {
   .listings-container {
     width: 50%;
   }
