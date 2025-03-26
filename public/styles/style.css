@@ -85,6 +85,11 @@ body {
 *:focus {
   outline: none;
 }
+/* only activates once the full navbar appears */
+body.no-scroll {
+  overflow: hidden;
+  touch-action: none;
+}
 
 /* ----------------------------------------
 Reusable
@@ -139,14 +144,16 @@ header {
   height: 100vh;
   min-height: 400px;
   background-attachment: scroll;
+  max-width: 1536px;
+  margin: 0 auto;
 }
 .header {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0%;
+  width: 100%;
   padding: 0 5%;
   background: transparent;
-  width: 100%;
   z-index: 3;
   padding-top: 0.3125rem;
 }
@@ -240,6 +247,7 @@ nav {
 nav.active {
   display: block;
   opacity: 1;
+  overflow: hidden;
 }
 /* links */
 nav ul {
@@ -313,18 +321,23 @@ nav.white ul li a {
 /* call button */
 .call-btn:link,
 .call-btn:visited {
+  background: linear-gradient(135deg, #f5b700, #f0c500);
+  border: none;
+  border-radius: 50px;
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
   font-size: 1.375rem;
-  background-color: #f5b700;
-  border: 1px solid #f5b700;
-  border-radius: 200px;
-  padding: 10px 10px;
+  font-weight: 400;
+  padding: 10px 20px;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .call-btn:hover,
 .call-btn:active,
 .call-btn:focus {
-  background-color: #d8a303;
-  border: 1px solid #d8a303;
-  border: 1px solid #d8a303;
+  background: linear-gradient(135deg, #d8a303, #c7a800);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 .phone-icon {
   vertical-align: middle;
@@ -353,21 +366,22 @@ nav.white ul li a {
 /* call to action button*/
 .btn:link,
 .btn:visited {
-  background-color: #b7d5d4;
-  border: 1px solid #b7d5d4;
-  border-radius: 200px;
+  background: linear-gradient(135deg, #b7d5d4, #9fc7c5);
+  border: none;
+  border-radius: 50px;
   color: #000;
   text-decoration: none;
   display: inline-block;
   font-size: 1.375rem;
   font-weight: 400;
   padding: 10px 20px;
-  transition: background-color 0.2s, border 0.2s, color;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .btn:hover,
 .btn:active {
-  background-color: #74aaa8;
-  border: 1px solid #74aaa8;
+  background: linear-gradient(135deg, #74aaa8, #5a8d8c);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* ----------------------------------------
@@ -426,7 +440,7 @@ Why Us
 .bg2 {
   background: url(../images/why-us-bg.svg) no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: 25% 75%;
 }
 .reasons {
   display: flex;
@@ -478,14 +492,13 @@ Cities
 .city-title {
   padding-top: 1.875rem;
   font-size: 1.5rem;
+  color: #000;
+  text-align: center;
 }
 .city-des {
   width: 90%;
   margin: 1.25rem auto;
   font-size: 1.125rem;
-}
-.city-title,
-.city-des {
   color: #000;
   text-align: center;
 }
@@ -588,15 +601,22 @@ form textarea {
 }
 /* submit button */
 .submit-btn {
-  background-color: #f5b700;
-  margin-bottom: 0;
+  background: linear-gradient(135deg, #f5b700, #f0c500);
+  border: none;
+  border-radius: 50px;
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .submit-btn:hover,
 .submit-btn:active,
 .submit-btn:focus {
-  background-color: #d8a303;
-  border: 1px solid #d8a303;
-  border: 1px solid #d8a303;
+  background: linear-gradient(135deg, #d8a303, #c7a800);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 /* ----------------------------------------
 Footer
@@ -704,7 +724,7 @@ Onload Animations
 Media Queries
 ---------------------------------------- */
 /* needed for city listings to avoid weird layout */
-@media (max-width: 400px) {
+@media (max-width: 360px) {
   .listings-container {
     width: 50%;
   }
@@ -731,9 +751,13 @@ Media Queries
   nav ul li a {
     font-size: 1.875rem;
   }
+  .phone-icon {
+    height: 1.875rem;
+    width: 1.875rem;
+  }
   .call-btn:link,
   .call-btn:visited {
-    font-size: 1.6875rem;
+    font-size: 1.875rem;
   }
 }
 
@@ -782,6 +806,11 @@ Media Queries
   .hamburger {
     display: none;
   }
+  .header {
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1536px;
+  }
   nav {
     display: flex;
     justify-content: flex-end;
@@ -795,19 +824,22 @@ Media Queries
     right: 5%;
   }
   nav ul {
-    margin: 0;
     width: auto;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 1.375rem;
+    margin-top: 1rem;
   }
   nav ul li {
     opacity: 1;
     padding-bottom: 0;
-    margin-left: 2.3125rem;
+    margin-left: 1.5rem;
   }
   nav ul li a {
     font-size: 1.25rem;
+  }
+  .phone-icon {
+    height: 1.25rem;
+    width: 1.25rem;
   }
   .call-btn:link,
   .call-btn:visited {
@@ -829,11 +861,23 @@ Media Queries
     align-items: flex-start;
     column-gap: 2.5rem;
   }
-  .listings {
-    justify-content: center;
+  .contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
   }
-  .listings span {
-    flex: 0 1 calc(24% - 1rem);
+  form {
+    width: 55%;
+  }
+  form input,
+  form textarea {
+    width: 100%;
+  }
+  .contact-section img {
+    display: block;
+    height: 250px;
+    width: 250px;
   }
   .footer-links {
     display: flex;
@@ -843,5 +887,33 @@ Media Queries
   .footer-links li:last-child {
     margin-right: 0;
     margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .locations {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* or center, depending on your design */
+    gap: 1rem; /* optional spacing between columns */
+  }
+
+  .locations iframe {
+    order: 2; /* place the map on the right */
+    flex: 1 1 60%; /* adjust as needed for desired width */
+  }
+
+  .locations-container {
+    order: 1; /* place the cities content on the left */
+    flex: 1 1 40%; /* adjust as needed */
+  }
+  .listings {
+    justify-content: flex-start;
+  }
+  .listings span {
+    flex: 0 1 calc((100% - 1.5rem) / 2);
+  }
+  .city-des {
+    text-align: left;
   }
 }
