@@ -96,9 +96,9 @@ Reusable
 ---------------------------------------- */
 /* section paddings */
 .container {
-  padding: 2.1875rem 5%;
+  padding: 1.5rem 5%;
   max-width: 1536px;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 /* section specifics */
 .section-title {
@@ -113,9 +113,9 @@ Reusable
   line-height: 1.8125em;
   font-size: 1.125rem;
 }
-/* padding between paragraphs */
+/* margin between paragraphs */
 .section-text p {
-  padding-bottom: 1.8125em;
+  margin-bottom: 1.8125em;
 }
 /* border */
 .border {
@@ -152,10 +152,9 @@ header {
   top: 0;
   left: 0%;
   width: 100%;
-  padding: 0 5%;
+  padding: 0.3125rem 5% 0 5%;
   background: transparent;
   z-index: 3;
-  padding-top: 0.3125rem;
 }
 /* fixed navbar */
 .header.fixed {
@@ -255,13 +254,12 @@ nav ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  gap: 20px;
+  height: 100vh;
+  gap: 100px;
 }
 nav ul li {
   list-style: none;
   opacity: 0;
-  padding-bottom: 80px;
 }
 nav ul li a {
   font-size: 1.5625rem;
@@ -272,7 +270,7 @@ nav ul li a:link,
 nav ul li a:visited {
   padding: 8px 0;
   border-bottom: 2px solid transparent;
-  transition: border-bttom 0.2s;
+  transition: border-bottom 0.2s;
 }
 nav ul li a:hover,
 nav ul li a:active {
@@ -398,7 +396,7 @@ About Us
   flex-direction: column;
 }
 .iso-house {
-  margin: 1.875em auto 0;
+  /* margin: 1.875em auto 0; */
   opacity: 0;
   height: 50%;
   width: 50%;
@@ -415,11 +413,11 @@ Services
 }
 /* services container */
 .service-des {
-  margin-bottom: 1.875rem;
+  /* margin-bottom: 1.875rem; */
   text-align: center;
 }
 .service-des:last-child {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 /* service icons */
 .service-des img {
@@ -431,7 +429,7 @@ Services
   color: #000;
   width: 100%;
   font-size: 1.5rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 /* ----------------------------------------
 Why Us
@@ -452,18 +450,18 @@ Why Us
 .reasons-des {
   width: 100%;
   text-align: center;
-  margin-top: 1.875rem;
+  /* margin-top: 1.875rem; */
 }
 /* why us icons */
 .reasons-des img {
   width: 50%;
   height: 50%;
-  margin-bottom: 1.25rem;
+  /* margin-bottom: 1.25rem; */
 }
 /* why us icon titles */
 .reasons-des h2 {
   color: #000;
-  margin-bottom: 1.25rem;
+  /* margin-bottom: 1.25rem; */
   font-size: 1.5rem;
 }
 /* why us icon descriptions */
@@ -471,7 +469,7 @@ Why Us
   color: #000;
   width: 100%;
   font-size: 1.25rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 /* ----------------------------------------
 Cities
@@ -486,18 +484,18 @@ Cities
 }
 
 .locations-content {
-  margin-top: 0.9375rem;
+  /* margin-top: 0.9375rem; */
 }
 /* title and description */
 .city-title {
-  padding-top: 1.875rem;
+  /* padding-top: 1.875rem; */
   font-size: 1.5rem;
   color: #000;
   text-align: center;
 }
 .city-des {
   width: 90%;
-  margin: 1.25rem auto;
+  /* margin: 1.25rem auto; */
   font-size: 1.125rem;
   color: #000;
   text-align: center;
@@ -505,13 +503,13 @@ Cities
 
 /* city listings */
 .listings-container {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   width: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-bottom: 1.25rem;
+  /* padding-bottom: 1.25rem; */
 }
 
 .listings {
@@ -528,7 +526,7 @@ Cities
 .listings span img {
   height: 1.875rem;
   width: 1.875rem;
-  margin-right: 5px;
+  /* margin-right: 5px; */
 }
 .listings span p {
   color: #000;
@@ -556,7 +554,7 @@ form input {
   width: 90%;
   height: 50px;
   border-radius: 30px;
-  margin-bottom: 1.875rem;
+  /* margin-bottom: 1.875rem; */
   border: 1px solid #c4c4c4;
   font-size: 1rem;
 }
@@ -582,8 +580,8 @@ form textarea {
   height: 200px;
   border: 1px solid #c4c4c4;
   border-radius: 30px;
-  margin-bottom: 1.875rem;
-  padding-top: 20px;
+  /* margin-bottom: 1.875rem; */
+  /* padding-top: 20px; */
   font-size: 1.125rem;
   line-height: 1.25rem;
   overflow: auto;
@@ -591,13 +589,13 @@ form textarea {
 form textarea::placeholder {
   color: #c4c4c4;
   text-align: center;
-  padding-top: 60px;
+  /* padding-top: 60px; */
 }
 /* input and textarea */
 form input,
 form textarea {
-  padding-right: 20px;
-  padding-left: 20px;
+  /* padding-right: 20px; */
+  /* padding-left: 20px; */
 }
 /* submit button */
 .submit-btn {
@@ -607,7 +605,7 @@ form textarea {
   color: #000;
   font-size: 1.125rem;
   font-weight: 400;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -626,12 +624,12 @@ footer {
 }
 /* footer links */
 .footer-links {
-  margin-bottom: 1.875rem;
+  /* margin-bottom: 1.875rem; */
   width: 100%;
 }
 .footer-links li {
   list-style: none;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   text-align: center;
 }
 .footer-links li a {
@@ -743,10 +741,10 @@ Media Queries
 /* full screen navbar */
 @media only screen and (min-height: 800px) {
   nav ul {
-    margin: 5% 0;
+    /* margin: 5% 0; */
   }
   nav ul li {
-    padding-bottom: 6.25rem;
+    /* padding-bottom: 6.25rem; */
   }
   nav ul li a {
     font-size: 1.875rem;
@@ -775,7 +773,7 @@ Media Queries
   }
   .service-des {
     width: 50%;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
   }
 
   /* why us */
@@ -825,14 +823,15 @@ Media Queries
   }
   nav ul {
     width: auto;
+    height: auto;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
   }
   nav ul li {
     opacity: 1;
-    padding-bottom: 0;
-    margin-left: 1.5rem;
+    /* padding-bottom: 0; */
+    /* margin-left: 1.5rem; */
   }
   nav ul li a {
     font-size: 1.25rem;
@@ -844,7 +843,7 @@ Media Queries
   .call-btn:link,
   .call-btn:visited {
     font-size: 1.25rem;
-    padding: 7px 7px;
+    /* padding: 7px 7px; */
   }
   .iso-house {
     height: 350px;
@@ -865,7 +864,7 @@ Media Queries
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
   form {
     width: 55%;
@@ -885,8 +884,8 @@ Media Queries
   }
 
   .footer-links li:last-child {
-    margin-right: 0;
-    margin-left: auto;
+    /* margin-right: 0; */
+    /* margin-left: auto; */
   }
 }
 
