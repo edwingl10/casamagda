@@ -96,9 +96,9 @@ Reusable
 ---------------------------------------- */
 /* section paddings */
 .container {
-  padding: 2.1875rem 5%;
+  padding: 1.5rem 5%;
   max-width: 1536px;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 /* section specifics */
 .section-title {
@@ -113,9 +113,9 @@ Reusable
   line-height: 1.8125em;
   font-size: 1.125rem;
 }
-/* padding between paragraphs */
+/* margin between paragraphs */
 .section-text p {
-  padding-bottom: 1.8125em;
+  margin-bottom: 1.8125rem;
 }
 /* border */
 .border {
@@ -152,10 +152,9 @@ header {
   top: 0;
   left: 0%;
   width: 100%;
-  padding: 0 5%;
+  padding: 0.3125rem 5% 0 5%;
   background: transparent;
   z-index: 3;
-  padding-top: 0.3125rem;
 }
 /* fixed navbar */
 .header.fixed {
@@ -255,13 +254,12 @@ nav ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  gap: 20px;
+  height: 100vh;
+  gap: 70px;
 }
 nav ul li {
   list-style: none;
   opacity: 0;
-  padding-bottom: 80px;
 }
 nav ul li a {
   font-size: 1.5625rem;
@@ -272,7 +270,7 @@ nav ul li a:link,
 nav ul li a:visited {
   padding: 8px 0;
   border-bottom: 2px solid transparent;
-  transition: border-bttom 0.2s;
+  transition: border-bottom 0.2s;
 }
 nav ul li a:hover,
 nav ul li a:active {
@@ -398,7 +396,7 @@ About Us
   flex-direction: column;
 }
 .iso-house {
-  margin: 1.875em auto 0;
+  margin: 1.875rem auto;
   opacity: 0;
   height: 50%;
   width: 50%;
@@ -412,14 +410,11 @@ Services
   align-items: center;
   opacity: 0;
   justify-content: center;
+  gap: 30px;
 }
 /* services container */
 .service-des {
-  margin-bottom: 1.875rem;
   text-align: center;
-}
-.service-des:last-child {
-  margin-bottom: 0;
 }
 /* service icons */
 .service-des img {
@@ -431,7 +426,6 @@ Services
   color: #000;
   width: 100%;
   font-size: 1.5rem;
-  margin: 0 auto;
 }
 /* ----------------------------------------
 Why Us
@@ -471,7 +465,6 @@ Why Us
   color: #000;
   width: 100%;
   font-size: 1.25rem;
-  margin: 0 auto;
 }
 /* ----------------------------------------
 Cities
@@ -482,15 +475,14 @@ Cities
   height: 350px;
 }
 .locations-container {
+  margin-top: 1.875rem;
   background-color: #fafcfd;
+  padding: 1.875rem 0;
 }
 
-.locations-content {
-  margin-top: 0.9375rem;
-}
 /* title and description */
 .city-title {
-  padding-top: 1.875rem;
+  /* padding-top: 1.875rem; */
   font-size: 1.5rem;
   color: #000;
   text-align: center;
@@ -505,13 +497,11 @@ Cities
 
 /* city listings */
 .listings-container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-bottom: 1.25rem;
 }
 
 .listings {
@@ -583,7 +573,6 @@ form textarea {
   border: 1px solid #c4c4c4;
   border-radius: 30px;
   margin-bottom: 1.875rem;
-  padding-top: 20px;
   font-size: 1.125rem;
   line-height: 1.25rem;
   overflow: auto;
@@ -591,13 +580,11 @@ form textarea {
 form textarea::placeholder {
   color: #c4c4c4;
   text-align: center;
-  padding-top: 60px;
 }
 /* input and textarea */
 form input,
 form textarea {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 1rem 20px;
 }
 /* submit button */
 .submit-btn {
@@ -623,6 +610,9 @@ Footer
 ---------------------------------------- */
 footer {
   background-color: #333;
+}
+footer.container {
+  margin: 0 auto;
 }
 /* footer links */
 .footer-links {
@@ -742,12 +732,6 @@ Media Queries
 
 /* full screen navbar */
 @media only screen and (min-height: 800px) {
-  nav ul {
-    margin: 5% 0;
-  }
-  nav ul li {
-    padding-bottom: 6.25rem;
-  }
   nav ul li a {
     font-size: 1.875rem;
   }
@@ -775,7 +759,6 @@ Media Queries
   }
   .service-des {
     width: 50%;
-    margin-bottom: 0;
   }
 
   /* why us */
@@ -825,14 +808,15 @@ Media Queries
   }
   nav ul {
     width: auto;
+    height: auto;
     flex-direction: row;
     justify-content: flex-end;
     margin-top: 1rem;
+    gap: 60px;
   }
   nav ul li {
     opacity: 1;
     padding-bottom: 0;
-    margin-left: 1.5rem;
   }
   nav ul li a {
     font-size: 1.25rem;
@@ -865,7 +849,6 @@ Media Queries
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 0 auto;
   }
   form {
     width: 55%;
@@ -894,18 +877,19 @@ Media Queries
   .locations {
     display: flex;
     flex-direction: row;
-    align-items: stretch; /* or center, depending on your design */
-    gap: 1rem; /* optional spacing between columns */
+    align-items: stretch;
+    gap: 1rem;
   }
 
   .locations iframe {
-    order: 2; /* place the map on the right */
-    flex: 1 1 60%; /* adjust as needed for desired width */
+    order: 2;
+    flex: 1 1 60%;
   }
 
   .locations-container {
-    order: 1; /* place the cities content on the left */
-    flex: 1 1 40%; /* adjust as needed */
+    margin-top: 0;
+    order: 1;
+    flex: 1 1 40%;
   }
   .listings {
     justify-content: flex-start;
