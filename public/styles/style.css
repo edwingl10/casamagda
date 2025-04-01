@@ -255,7 +255,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  gap: 100px;
+  gap: 70px;
 }
 nav ul li {
   list-style: none;
@@ -475,14 +475,14 @@ Cities
   height: 350px;
 }
 .locations-container {
-  background-color: #fafcfd;
-}
-.locations-content {
   margin-top: 1.875rem;
+  background-color: #fafcfd;
+  padding: 1.875rem 0;
 }
 
 /* title and description */
 .city-title {
+  /* padding-top: 1.875rem; */
   font-size: 1.5rem;
   color: #000;
   text-align: center;
@@ -497,7 +497,7 @@ Cities
 
 /* city listings */
 .listings-container {
-  margin: 0 auto 1.25rem;
+  margin: 0 auto;
   width: 80%;
   display: flex;
   justify-content: center;
@@ -610,6 +610,9 @@ Footer
 ---------------------------------------- */
 footer {
   background-color: #333;
+}
+footer.container {
+  margin: 0 auto;
 }
 /* footer links */
 .footer-links {
@@ -884,6 +887,7 @@ Media Queries
   }
 
   .locations-container {
+    margin-top: 0;
     order: 1;
     flex: 1 1 40%;
   }
