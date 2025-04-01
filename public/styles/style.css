@@ -115,7 +115,7 @@ Reusable
 }
 /* margin between paragraphs */
 .section-text p {
-  margin-bottom: 1.8125em;
+  margin-bottom: 1.8125rem;
 }
 /* border */
 .border {
@@ -396,7 +396,7 @@ About Us
   flex-direction: column;
 }
 .iso-house {
-  /* margin: 1.875em auto 0; */
+  margin: 1.875rem auto;
   opacity: 0;
   height: 50%;
   width: 50%;
@@ -410,14 +410,11 @@ Services
   align-items: center;
   opacity: 0;
   justify-content: center;
+  gap: 30px;
 }
 /* services container */
 .service-des {
-  /* margin-bottom: 1.875rem; */
   text-align: center;
-}
-.service-des:last-child {
-  /* margin-bottom: 0; */
 }
 /* service icons */
 .service-des img {
@@ -429,7 +426,6 @@ Services
   color: #000;
   width: 100%;
   font-size: 1.5rem;
-  /* margin: 0 auto; */
 }
 /* ----------------------------------------
 Why Us
@@ -450,18 +446,18 @@ Why Us
 .reasons-des {
   width: 100%;
   text-align: center;
-  /* margin-top: 1.875rem; */
+  margin-top: 1.875rem;
 }
 /* why us icons */
 .reasons-des img {
   width: 50%;
   height: 50%;
-  /* margin-bottom: 1.25rem; */
+  margin-bottom: 1.25rem;
 }
 /* why us icon titles */
 .reasons-des h2 {
   color: #000;
-  /* margin-bottom: 1.25rem; */
+  margin-bottom: 1.25rem;
   font-size: 1.5rem;
 }
 /* why us icon descriptions */
@@ -469,7 +465,6 @@ Why Us
   color: #000;
   width: 100%;
   font-size: 1.25rem;
-  /* margin: 0 auto; */
 }
 /* ----------------------------------------
 Cities
@@ -482,20 +477,19 @@ Cities
 .locations-container {
   background-color: #fafcfd;
 }
-
 .locations-content {
-  /* margin-top: 0.9375rem; */
+  margin-top: 1.875rem;
 }
+
 /* title and description */
 .city-title {
-  /* padding-top: 1.875rem; */
   font-size: 1.5rem;
   color: #000;
   text-align: center;
 }
 .city-des {
   width: 90%;
-  /* margin: 1.25rem auto; */
+  margin: 1.25rem auto;
   font-size: 1.125rem;
   color: #000;
   text-align: center;
@@ -503,13 +497,11 @@ Cities
 
 /* city listings */
 .listings-container {
-  /* margin-left: auto; */
-  /* margin-right: auto; */
+  margin: 0 auto 1.25rem;
   width: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* padding-bottom: 1.25rem; */
 }
 
 .listings {
@@ -526,7 +518,7 @@ Cities
 .listings span img {
   height: 1.875rem;
   width: 1.875rem;
-  /* margin-right: 5px; */
+  margin-right: 5px;
 }
 .listings span p {
   color: #000;
@@ -554,7 +546,7 @@ form input {
   width: 90%;
   height: 50px;
   border-radius: 30px;
-  /* margin-bottom: 1.875rem; */
+  margin-bottom: 1.875rem;
   border: 1px solid #c4c4c4;
   font-size: 1rem;
 }
@@ -580,8 +572,7 @@ form textarea {
   height: 200px;
   border: 1px solid #c4c4c4;
   border-radius: 30px;
-  /* margin-bottom: 1.875rem; */
-  /* padding-top: 20px; */
+  margin-bottom: 1.875rem;
   font-size: 1.125rem;
   line-height: 1.25rem;
   overflow: auto;
@@ -589,13 +580,11 @@ form textarea {
 form textarea::placeholder {
   color: #c4c4c4;
   text-align: center;
-  /* padding-top: 60px; */
 }
 /* input and textarea */
 form input,
 form textarea {
-  /* padding-right: 20px; */
-  /* padding-left: 20px; */
+  padding: 1rem 20px;
 }
 /* submit button */
 .submit-btn {
@@ -605,7 +594,7 @@ form textarea {
   color: #000;
   font-size: 1.125rem;
   font-weight: 400;
-  /* padding: 10px 20px; */
+  padding: 10px 20px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
