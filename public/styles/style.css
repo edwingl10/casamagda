@@ -613,12 +613,12 @@ footer {
 }
 /* footer links */
 .footer-links {
-  /* margin-bottom: 1.875rem; */
+  margin-bottom: 1.875rem;
   width: 100%;
 }
 .footer-links li {
   list-style: none;
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
   text-align: center;
 }
 .footer-links li a {
@@ -729,12 +729,6 @@ Media Queries
 
 /* full screen navbar */
 @media only screen and (min-height: 800px) {
-  nav ul {
-    /* margin: 5% 0; */
-  }
-  nav ul li {
-    /* padding-bottom: 6.25rem; */
-  }
   nav ul li a {
     font-size: 1.875rem;
   }
@@ -762,7 +756,6 @@ Media Queries
   }
   .service-des {
     width: 50%;
-    /* margin-bottom: 0; */
   }
 
   /* why us */
@@ -815,12 +808,12 @@ Media Queries
     height: auto;
     flex-direction: row;
     justify-content: flex-end;
-    /* margin-top: 1rem; */
+    margin-top: 1rem;
+    gap: 60px;
   }
   nav ul li {
     opacity: 1;
-    /* padding-bottom: 0; */
-    /* margin-left: 1.5rem; */
+    padding-bottom: 0;
   }
   nav ul li a {
     font-size: 1.25rem;
@@ -832,7 +825,7 @@ Media Queries
   .call-btn:link,
   .call-btn:visited {
     font-size: 1.25rem;
-    /* padding: 7px 7px; */
+    padding: 7px 7px;
   }
   .iso-house {
     height: 350px;
@@ -853,7 +846,6 @@ Media Queries
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* margin: 0 auto; */
   }
   form {
     width: 55%;
@@ -873,8 +865,8 @@ Media Queries
   }
 
   .footer-links li:last-child {
-    /* margin-right: 0; */
-    /* margin-left: auto; */
+    margin-right: 0;
+    margin-left: auto;
   }
 }
 
@@ -882,18 +874,18 @@ Media Queries
   .locations {
     display: flex;
     flex-direction: row;
-    align-items: stretch; /* or center, depending on your design */
-    gap: 1rem; /* optional spacing between columns */
+    align-items: stretch;
+    gap: 1rem;
   }
 
   .locations iframe {
-    order: 2; /* place the map on the right */
-    flex: 1 1 60%; /* adjust as needed for desired width */
+    order: 2;
+    flex: 1 1 60%;
   }
 
   .locations-container {
-    order: 1; /* place the cities content on the left */
-    flex: 1 1 40%; /* adjust as needed */
+    order: 1;
+    flex: 1 1 40%;
   }
   .listings {
     justify-content: flex-start;
