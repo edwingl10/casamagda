@@ -26,3 +26,11 @@ jobs:
         run: |
           CHANNEL_ID="pr-${{ github.event.number }}"
           firebase hosting:channel:deploy $CHANNEL_ID --project $FIREBASE_PROJECT --token $FIREBASE_TOKEN --expires 7d
+
+      - name: Post Preview URL Comment
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          issue-number: ${{ github.event.number }}
+          body: |
+            :rocket: A preview of this PR is available here:
+            ${{ env.PREVIEW_URL }}
