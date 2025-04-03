@@ -6,25 +6,34 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "headers": [{
-      "source": "**/*.@(svg|jpg|jpeg|gif|png)",
-      "headers": [{
-        "key": "Cache-Control",
-        "value": "max-age=604800"
-      }]
-    }, {
-      "source": "**/*.@(js|css)",
-      "headers": [{
-        "key": "Cache-Control",
-        "value": "max-age=604800"
-      }]
-    }, {
-      "source": "404.html",
-      "headers": [{
-        "key": "Cache-Control",
-        "value": "max-age=300"
-      }]
-    }]
+    "headers": [
+      {
+        "source": "**/*.@(svg|jpg|jpeg|gif|png)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=604800"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(js|css)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=604800"
+          }
+        ]
+      },
+      {
+        "source": "404.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=300"
+          }
+        ]
+      }
+    ]
   }
 }
-
