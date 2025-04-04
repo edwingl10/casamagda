@@ -27,7 +27,16 @@
     />
     <link rel="manifest" href="images/favicon_io/site.webmanifest" />
 
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link
+      rel="preload"
+      href="styles/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="styles/style.css" />
+    </noscript>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
