@@ -630,16 +630,16 @@ footer.container {
 .footer-links li a:link,
 .footer-links li a:visited {
   text-decoration: none;
-  color: #919191;
+  color: #fafafa;
 }
 /* footer links hover effect */
 .footer-links li a:hover,
 .footer-links li a:active {
-  color: #cc9900;
+  color: #d8a303;
 }
 /* copy right */
 footer p {
-  color: #919191;
+  color: #fafafa;
   text-align: center;
 }
 .footer-links li a,
