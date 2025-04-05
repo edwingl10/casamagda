@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="M&A Cleaning is a 2 person houskeeping team with the mission to make your home cleaning experience safe and consistently delightful."
+      content="M&A Cleaning Service is a trusted Los Angeles housekeeping team with 15+ years of experience, delivering reliable, detailed, and personalized cleaning for every home."
     />
 
     <link
@@ -27,11 +27,31 @@
     />
     <link rel="manifest" href="images/favicon_io/site.webmanifest" />
 
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="styles/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link rel="stylesheet" href="styles/style.css" />
+    </noscript>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      />
+    </noscript>
+
     <title>M&A | Cleaning Services</title>
   </head>
 
@@ -126,7 +146,7 @@
           <p>Bathroom Cleaning</p>
         </div>
         <div class="service-des" alt="clean bedroom icon">
-          <img src="images/bedroomIcon.svg" />
+          <img src="images/bedroomIcon.svg" alt="clean bed icon" />
           <p>Bedroom Cleaning</p>
         </div>
         <div class="service-des">
@@ -181,7 +201,11 @@
 
       <div class="locations">
         <iframe
-          src="https://www.google.com/maps/d/embed?mid=1Yj9_EMWTCWbyoTeVYoo13HKlLHC7SOg9&hl=en"
+          src="https://www.google.com/maps/d/u/0/embed?mid=1Yj9_EMWTCWbyoTeVYoo13HKlLHC7SOg9&ehbc=2E312F"
+          title="map showing our locations throughout Los Angeles."
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          frameborder="0"
         ></iframe>
 
         <div class="locations-container">
@@ -303,7 +327,11 @@
     <script src="/__/firebase/7.20.0/firebase-analytics.js" defer></script>
     <script src="/__/firebase/init.js" defer></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/noframework.waypoints.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/mail.js"></script>
