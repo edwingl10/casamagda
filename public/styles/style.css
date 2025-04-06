@@ -340,8 +340,6 @@ nav.white ul li a {
 }
 .phone-icon {
   vertical-align: middle;
-  height: 1.375rem;
-  width: 1.375rem;
 }
 /* hero text box */
 .hero-text-box {
@@ -804,10 +802,6 @@ Media Queries
   }
   nav ul li a {
     font-size: 1.25rem;
-  }
-  .phone-icon {
-    height: 1.25rem;
-    width: 1.25rem;
   }
   .call-btn:link,
   .call-btn:visited {
