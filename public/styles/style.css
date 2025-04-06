@@ -374,12 +374,10 @@ nav.white ul li a {
   font-weight: 400;
   padding: 10px 20px;
   transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .btn:hover,
 .btn:active {
   background: linear-gradient(135deg, #74aaa8, #5a8d8c);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* ----------------------------------------
