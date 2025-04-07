@@ -5,7 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="M&A Cleaning is a 2 person houskeeping team with the mission to make your home cleaning experience safe and consistently delightful."
+      content="M&A Cleaning Service is a trusted Los Angeles housekeeping team with 15+ years of experience, delivering reliable, detailed, and personalized cleaning for every home."
+    />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="M&A | Cleaning Services" />
+    <meta
+      property="og:description"
+      content="M&A Cleaning Service is a trusted Los Angeles housekeeping team with 15+ years of experience, delivering reliable, detailed, and personalized cleaning for every home."
+    />
+    <meta
+      property="og:image"
+      content="images/favicon_io/apple-touch-icon.png"
+    />
+    <meta property="og:url" content="https://mandacleaning.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="M&A | Cleaning Services" />
+    <meta
+      name="twitter:description"
+      content="M&A Cleaning Service is a trusted Los Angeles housekeeping team with 15+ years of experience, delivering reliable, detailed, and personalized cleaning for every home."
+    />
+    <meta
+      name="twitter:image"
+      content="images/favicon_io/apple-touch-icon.png"
     />
 
     <link
@@ -27,11 +52,51 @@
     />
     <link rel="manifest" href="images/favicon_io/site.webmanifest" />
 
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "M&A Cleaning Service",
+        "image": "https://yourdomain.com/images/logo.png",
+        "telephone": "+1323-219-2392",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Main Street",
+          "addressLocality": "Los Angeles",
+          "addressRegion": "CA",
+          "postalCode": "90001",
+          "addressCountry": "US"
+        },
+        "url": "https://yourdomain.com",
+        "priceRange": "$$"
+      }
+    </script>
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="styles/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link rel="stylesheet" href="styles/style.css" />
+    </noscript>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      />
+    </noscript>
+
     <title>M&A | Cleaning Services</title>
   </head>
 
@@ -52,6 +117,8 @@
                   src="images/phoneIcon.svg"
                   alt="phone icon"
                   class="phone-icon"
+                  height="22"
+                  width="22"
                 />
                 <span style="color: #000">Call Now</span>
               </a>
@@ -69,223 +136,292 @@
       </div>
     </header>
 
-    <div class="container js--section-about bg1" id="about-us">
-      <h2 class="section-title">Who We Are</h2>
-      <div class="border"></div>
+    <main>
+      <div class="container js--section-about bg1" id="about-us">
+        <h2 class="section-title">Who We Are</h2>
+        <div class="border"></div>
 
-      <div class="about-content">
+        <div class="about-content">
+          <div class="section-text">
+            <p>
+              M&A Cleaning Service is a small housekeeping team proudly serving
+              the vibrant city of Los Angeles. With over 15 years of
+              professional cleaning experience, we bring reliability, attention
+              to detail, and a personalized touch to every home we care for. Our
+              long list of satisfied clients and glowing references speak to the
+              quality and consistency of our work.
+            </p>
+            <p>
+              Your comfort, safety, and satisfaction are at the heart of
+              everything we do. At M&A Cleaning Service, we approach every home
+              with care and professionalism, treating your space with the same
+              respect and attention we would our own. We are committed to
+              delivering a consistently exceptional cleaning experience — one
+              that leaves your home refreshed and your mind at ease.
+              Understanding that every household has unique needs and routines,
+              we offer flexible scheduling options to accommodate your
+              lifestyle. Whether you prefer weekly, bi-weekly, or monthly
+              service, we’ll work with you to set up a recurring cleaning plan
+              that fits seamlessly into your schedule.
+            </p>
+          </div>
+
+          <img
+            class="iso-house js--wp-1"
+            src="images/about.svg"
+            alt="isometric view of house"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <div class="container" id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="border"></div>
+
         <div class="section-text">
           <p>
-            M&A Cleaning Service is a small housekeeping team proudly serving
-            the vibrant city of Los Angeles. With over 15 years of professional
-            cleaning experience, we bring reliability, attention to detail, and
-            a personalized touch to every home we care for. Our long list of
-            satisfied clients and glowing references speak to the quality and
-            consistency of our work.
-          </p>
-          <p>
-            Your comfort, safety, and satisfaction are at the heart of
-            everything we do. At M&A Cleaning Service, we approach every home
-            with care and professionalism, treating your space with the same
-            respect and attention we would our own. We are committed to
-            delivering a consistently exceptional cleaning experience — one that
-            leaves your home refreshed and your mind at ease. Understanding that
-            every household has unique needs and routines, we offer flexible
-            scheduling options to accommodate your lifestyle. Whether you prefer
-            weekly, bi-weekly, or monthly service, we’ll work with you to set up
-            a recurring cleaning plan that fits seamlessly into your schedule.
+            Our residential housekeeping services cover all the essential areas
+            of your home, including thorough cleaning of bathrooms, bedrooms,
+            kitchens, and interior windows. If you’d like to learn more about
+            our services or have any questions, we’re always happy to help. Give
+            us a call — we’d love to speak with you and discuss how we can best
+            meet your cleaning needs.
           </p>
         </div>
 
-        <img
-          class="iso-house js--wp-1"
-          src="images/about.svg"
-          alt="isometric view of house"
-        />
-      </div>
-    </div>
-
-    <div class="container" id="services">
-      <h2 class="section-title">Our Services</h2>
-      <div class="border"></div>
-
-      <div class="section-text">
-        <p>
-          Our residential housekeeping services cover all the essential areas of
-          your home, including thorough cleaning of bathrooms, bedrooms,
-          kitchens, and interior windows. If you’d like to learn more about our
-          services or have any questions, we’re always happy to help. Give us a
-          call — we’d love to speak with you and discuss how we can best meet
-          your cleaning needs.
-        </p>
-      </div>
-
-      <div class="services js--wp-2">
-        <div class="service-des">
-          <img src="images/bathroomIcon.svg" alt="clean bathroom icon" />
-          <p>Bathroom Cleaning</p>
-        </div>
-        <div class="service-des" alt="clean bedroom icon">
-          <img src="images/bedroomIcon.svg" />
-          <p>Bedroom Cleaning</p>
-        </div>
-        <div class="service-des">
-          <img src="images/kitchenIcon.svg" alt="organized kitchen icon" />
-          <p>Kitchen Cleaning</p>
-        </div>
-        <div class="service-des">
-          <img src="images/windowIcon.svg" alt="shiny window icon" />
-          <p>Interior Window Cleaning</p>
+        <div class="services js--wp-2">
+          <div class="service-des">
+            <img
+              src="images/bathroomIcon.svg"
+              alt="clean bathroom icon"
+              loading="lazy"
+            />
+            <p>Bathroom Cleaning</p>
+          </div>
+          <div class="service-des" alt="clean bedroom icon">
+            <img
+              src="images/bedroomIcon.svg"
+              alt="clean bed icon"
+              loading="lazy"
+            />
+            <p>Bedroom Cleaning</p>
+          </div>
+          <div class="service-des">
+            <img
+              src="images/kitchenIcon.svg"
+              alt="organized kitchen icon"
+              loading="lazy"
+            />
+            <p>Kitchen Cleaning</p>
+          </div>
+          <div class="service-des">
+            <img
+              src="images/windowIcon.svg"
+              alt="shiny window icon"
+              loading="lazy"
+            />
+            <p>Interior Window Cleaning</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container bg2 js--wp-3" id="why-us">
-      <h2 class="section-title">Why Work With Us</h2>
-      <div class="border"></div>
+      <div class="container bg2 js--wp-3" id="why-us">
+        <h2 class="section-title">Why Work With Us</h2>
+        <div class="border"></div>
 
-      <div class="reasons">
-        <div class="reasons-des">
-          <img src="images/pricingIcon.svg" alt="hand showing price icon" />
-          <h2>Integrity Pricing</h2>
-          <p>
-            Custom pricing tailored to your home. Free on-site estimates
-            available.
-          </p>
-        </div>
-        <div class="reasons-des">
-          <img
-            src="images/satisfactionIcon.svg"
-            alt="thumbs up with star icon"
-          />
-          <h2>100% Satisfaction</h2>
-          <p>
-            With over 15 years of experience, we stand behind our work with a
-            100% satisfaction guarantee.
-          </p>
-        </div>
-        <div class="reasons-des">
-          <img src="images/ecoIcon.svg" alt="hand holding plant icon" />
-          <h2>Eco-Friendly</h2>
-          <p>
-            We use natural, eco-friendly products that are safe for your family
-            and gentle on the environment.
-          </p>
+        <div class="reasons">
+          <div class="reasons-des">
+            <img
+              src="images/pricingIcon.svg"
+              alt="hand showing price icon"
+              loading="lazy"
+            />
+            <h2>Integrity Pricing</h2>
+            <p>
+              Custom pricing tailored to your home. Free on-site estimates
+              available.
+            </p>
+          </div>
+          <div class="reasons-des">
+            <img
+              src="images/satisfactionIcon.svg"
+              alt="thumbs up with star icon"
+              loading="lazy"
+            />
+            <h2>100% Satisfaction</h2>
+            <p>
+              With over 15 years of experience, we stand behind our work with a
+              100% satisfaction guarantee.
+            </p>
+          </div>
+          <div class="reasons-des">
+            <img
+              src="images/ecoIcon.svg"
+              alt="hand holding plant icon"
+              loading="lazy"
+            />
+            <h2>Eco-Friendly</h2>
+            <p>
+              We use natural, eco-friendly products that are safe for your
+              family and gentle on the environment.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container" id="locations">
-      <h2 class="section-title">Where We Are</h2>
-      <div class="border"></div>
+      <div class="container" id="locations">
+        <h2 class="section-title">Where We Are</h2>
+        <div class="border"></div>
 
-      <div class="locations">
-        <iframe
-          src="https://www.google.com/maps/d/embed?mid=1Yj9_EMWTCWbyoTeVYoo13HKlLHC7SOg9&hl=en"
-        ></iframe>
+        <div class="locations">
+          <iframe
+            src="https://www.google.com/maps/d/u/0/embed?mid=1Yj9_EMWTCWbyoTeVYoo13HKlLHC7SOg9&ehbc=2E312F"
+            title="map showing our locations throughout Los Angeles."
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            frameborder="0"
+          ></iframe>
 
-        <div class="locations-container">
-          <h2 class="city-title">Cities</h2>
-          <p class="city-des">
-            Your city not listed? Give us a call to check our availability near
-            you.
-          </p>
-          <div class="listings-container">
-            <div class="listings">
-              <span
-                ><img src="images/location-pin.svg" alt="location ping icon" />
-                <p>Glendale</p></span
-              >
-              <span
-                ><img src="images/location-pin.svg" alt="location ping icon" />
-                <p>La Cañada</p></span
-              >
-              <span
-                ><img src="images/location-pin.svg" alt="location ping icon" />
-                <p>Los Angeles</p></span
-              >
-              <span
-                ><img src="images/location-pin.svg" alt="location ping icon" />
-                <p>Pasadena</p></span
-              >
-              <span
-                ><img src="images/location-pin.svg" alt="location ping icon" />
-                <p>Santa Monica</p></span
-              >
-              <span
-                ><img src="images/location-pin.svg" alt="location ping icon" />
-                <p>Silver Lake</p></span
-              >
-              <span
-                ><img src="images/location-pin.svg" alt="location ping icon" />
-                <p>Westmont</p></span
-              >
-              <span
-                ><img src="images/location-pin.svg" alt="location ping icon" />
-                <p>Westwood</p></span
-              >
+          <div class="locations-container">
+            <h2 class="city-title">Cities</h2>
+            <p class="city-des">
+              Your city not listed? Give us a call to check our availability
+              near you.
+            </p>
+            <div class="listings-container">
+              <div class="listings">
+                <span
+                  ><img
+                    src="images/location-pin.svg"
+                    alt="location ping icon"
+                    loading="lazy"
+                  />
+                  <p>Glendale</p></span
+                >
+                <span
+                  ><img
+                    src="images/location-pin.svg"
+                    alt="location ping icon"
+                    loading="lazy"
+                  />
+                  <p>La Cañada</p></span
+                >
+                <span
+                  ><img
+                    src="images/location-pin.svg"
+                    alt="location ping icon"
+                    loading="lazy"
+                  />
+                  <p>Los Angeles</p></span
+                >
+                <span
+                  ><img
+                    src="images/location-pin.svg"
+                    alt="location ping icon"
+                    loading="lazy"
+                  />
+                  <p>Pasadena</p></span
+                >
+                <span
+                  ><img
+                    src="images/location-pin.svg"
+                    alt="location ping icon"
+                    loading="lazy"
+                  />
+                  <p>Santa Monica</p></span
+                >
+                <span
+                  ><img
+                    src="images/location-pin.svg"
+                    alt="location ping icon"
+                    loading="lazy"
+                  />
+                  <p>Silver Lake</p></span
+                >
+                <span
+                  ><img
+                    src="images/location-pin.svg"
+                    alt="location ping icon"
+                    loading="lazy"
+                  />
+                  <p>Westmont</p></span
+                >
+                <span
+                  ><img
+                    src="images/location-pin.svg"
+                    alt="location ping icon"
+                    loading="lazy"
+                  />
+                  <p>Westwood</p></span
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container bg3">
-      <h2 class="section-title">Contact Us</h2>
-      <div class="border"></div>
+      <div class="container bg3">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="border"></div>
 
-      <div class="section-text center-text">
-        <p>
-          We are happy to answer any of your questions. Fill out the form and
-          we'll be in touch as soon as possible.
-        </p>
-      </div>
+        <div class="section-text center-text">
+          <p>
+            We are happy to answer any of your questions. Fill out the form and
+            we'll be in touch as soon as possible.
+          </p>
+        </div>
 
-      <div class="contact-section">
-        <form id="contact-form" method="post">
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Full Name*"
-            required
-          /><br />
+        <div class="contact-section">
+          <form id="contact-form" method="post">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Full Name*"
+              required
+            /><br />
 
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email*"
-            required
-          /><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email*"
+              required
+            /><br />
 
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="Subject*"
-            required
-          /><br />
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject*"
+              required
+            /><br />
 
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Your Message*"
-            required
-          ></textarea
-          ><br />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message*"
+              required
+            ></textarea
+            ><br />
 
-          <input
-            type="submit"
-            value="Send Message"
-            class="submit-btn"
-            id="submit"
+            <input
+              type="submit"
+              value="Send Message"
+              class="submit-btn"
+              id="submit"
+            />
+          </form>
+
+          <img
+            src="images/planeIcon.svg"
+            alt="email sending icon"
+            loading="lazy"
           />
-        </form>
-
-        <img src="images/planeIcon.svg" alt="email sending icon" />
+        </div>
       </div>
-    </div>
+    </main>
 
     <footer class="container">
       <ul class="footer-links">
@@ -303,7 +439,11 @@
     <script src="/__/firebase/7.20.0/firebase-analytics.js" defer></script>
     <script src="/__/firebase/init.js" defer></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/noframework.waypoints.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/mail.js"></script>

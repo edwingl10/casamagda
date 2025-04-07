@@ -76,7 +76,8 @@ html,
 body {
   background-color: #fff;
   color: #fff;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   text-rendering: optimizeLegibility;
@@ -137,7 +138,7 @@ Header
 header {
   background-color: #000;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/landing-page.jpg);
+    url(../images/landing-page.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -339,8 +340,6 @@ nav.white ul li a {
 }
 .phone-icon {
   vertical-align: middle;
-  height: 1.375rem;
-  width: 1.375rem;
 }
 /* hero text box */
 .hero-text-box {
@@ -374,12 +373,10 @@ nav.white ul li a {
   font-weight: 400;
   padding: 10px 20px;
   transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .btn:hover,
 .btn:active {
   background: linear-gradient(135deg, #74aaa8, #5a8d8c);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* ----------------------------------------
@@ -630,16 +627,16 @@ footer.container {
 .footer-links li a:link,
 .footer-links li a:visited {
   text-decoration: none;
-  color: #919191;
+  color: #fafafa;
 }
 /* footer links hover effect */
 .footer-links li a:hover,
 .footer-links li a:active {
-  color: #cc9900;
+  color: #d8a303;
 }
 /* copy right */
 footer p {
-  color: #919191;
+  color: #fafafa;
   text-align: center;
 }
 .footer-links li a,
@@ -730,21 +727,6 @@ Media Queries
   }
 }
 
-/* full screen navbar */
-@media only screen and (min-height: 800px) {
-  nav ul li a {
-    font-size: 1.875rem;
-  }
-  .phone-icon {
-    height: 1.875rem;
-    width: 1.875rem;
-  }
-  .call-btn:link,
-  .call-btn:visited {
-    font-size: 1.875rem;
-  }
-}
-
 /* Small screen sizes and up */
 @media (min-width: 600px) {
   .iso-house {
@@ -820,10 +802,6 @@ Media Queries
   }
   nav ul li a {
     font-size: 1.25rem;
-  }
-  .phone-icon {
-    height: 1.25rem;
-    width: 1.25rem;
   }
   .call-btn:link,
   .call-btn:visited {
